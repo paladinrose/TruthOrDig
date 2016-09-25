@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 1ef6d44e205333142b2826cde7578392
+timeCreated: 1463913351
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Abs
+    100002: Ankle.IK.L
+    100004: Ankle.IK.R
+    100006: Armature
+    100008: Collar.Bone.L
+    100010: Collar.Bone.R
+    100012: Elbow.IK.L
+    100014: Elbow.IK.L_end
+    100016: Elbow.IK.R
+    100018: Elbow.IK.R_end
+    100020: Foot.Ball.L
+    100022: Foot.Ball.L_end
+    100024: Foot.Ball.R
+    100026: Foot.Ball.R_end
+    100028: Fore.Arm.L
+    100030: Fore.Arm.R
+    100032: Hand.L
+    100034: Hand.L_end
+    100036: Hand.R
+    100038: Hand.R_end
+    100040: Head
+    100042: Head_end
+    100044: Knee.IK.L
+    100046: Knee.IK.L_end
+    100048: Knee.IK.R
+    100050: Knee.IK.R_end
+    100052: Lower.Leg.L
+    100054: Lower.Leg.L_end
+    100056: Lower.Leg.R
+    100058: Lower.Leg.R_end
+    100060: //RootNode
+    100062: Neck
+    100064: Nia_Hat
+    100066: Pump19
+    100068: Tailbone
+    100070: Toes.L
+    100072: Toes.L_end
+    100074: Toes.R
+    100076: Toes.R_end
+    100078: Torso
+    100080: Upper.Arm.L
+    100082: Upper.Arm.R
+    100084: Upper.Leg.L
+    100086: Upper.Leg.R
+    100088: Wrist.IK.L
+    100090: Wrist.IK.L_end
+    100092: Wrist.IK.R
+    100094: Wrist.IK.R_end
+    400000: Abs
+    400002: Ankle.IK.L
+    400004: Ankle.IK.R
+    400006: Armature
+    400008: Collar.Bone.L
+    400010: Collar.Bone.R
+    400012: Elbow.IK.L
+    400014: Elbow.IK.L_end
+    400016: Elbow.IK.R
+    400018: Elbow.IK.R_end
+    400020: Foot.Ball.L
+    400022: Foot.Ball.L_end
+    400024: Foot.Ball.R
+    400026: Foot.Ball.R_end
+    400028: Fore.Arm.L
+    400030: Fore.Arm.R
+    400032: Hand.L
+    400034: Hand.L_end
+    400036: Hand.R
+    400038: Hand.R_end
+    400040: Head
+    400042: Head_end
+    400044: Knee.IK.L
+    400046: Knee.IK.L_end
+    400048: Knee.IK.R
+    400050: Knee.IK.R_end
+    400052: Lower.Leg.L
+    400054: Lower.Leg.L_end
+    400056: Lower.Leg.R
+    400058: Lower.Leg.R_end
+    400060: //RootNode
+    400062: Neck
+    400064: Nia_Hat
+    400066: Pump19
+    400068: Tailbone
+    400070: Toes.L
+    400072: Toes.L_end
+    400074: Toes.R
+    400076: Toes.R_end
+    400078: Torso
+    400080: Upper.Arm.L
+    400082: Upper.Arm.R
+    400084: Upper.Leg.L
+    400086: Upper.Leg.R
+    400088: Wrist.IK.L
+    400090: Wrist.IK.L_end
+    400092: Wrist.IK.R
+    400094: Wrist.IK.R_end
+    4300000: Pump19
+    4300002: Nia_Hat
+    9500000: //RootNode
+    13700000: Nia_Hat
+    13700002: Pump19
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e3bc7f4d9f941da4287e88a89939b943,
+    type: 3}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

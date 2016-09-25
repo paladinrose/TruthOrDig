@@ -1,0 +1,874 @@
+fileFormatVersion: 2
+guid: 05db24427dee61044b5c71a6030b6f52
+timeCreated: 1464130346
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WashMoss_Square1
+    21300002: WashMoss_EquilateralTriangle1
+    21300004: WashMoss_Rhombus1
+    21300006: WashMoss_RightTriangle1
+    21300008: WashMoss_FlatTriangle1
+    21300010: WashMoss_TallTriangle1
+    21300012: WashMoss_Square2
+    21300014: WashMoss_EquilateralTriangle2
+    21300016: WashMoss_Rhombus2
+    21300018: WashMoss_RightTriangle2
+    21300020: WashMoss_FlatTriangle2
+    21300022: WashMoss_TallTriangle2
+    21300024: WashMoss_Square3
+    21300026: WashMoss_EquilateralTriangle3
+    21300028: WashMoss_Rhombus3
+    21300030: WashMoss_RightTriangle3
+    21300032: WashMoss_FlatTriangle3
+    21300034: WashMoss_TallTriangle3
+    21300036: WashMoss_Square4
+    21300038: WashMoss_EquilateralTriangle4
+    21300040: WashMoss_Rhombus4
+    21300042: WashMoss_RightTriangle4
+    21300044: WashMoss_FlatTriangle4
+    21300046: WashMoss_TallTriangle4
+    21300048: WashMoss_Cracks1
+    21300050: WashMoss_Vines1
+    21300052: WashMoss_Cracks2
+    21300054: WashMoss_Vines2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: WashMoss_Square1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_EquilateralTriangle1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -95}
+        - {x: -97, y: -95}
+        - {x: -95, y: -93}
+        - {x: -96, y: -90}
+        - {x: -100, y: -90}
+      - - {x: 95, y: -92}
+        - {x: 96, y: -95}
+        - {x: 100, y: -95}
+        - {x: 100, y: -90}
+        - {x: 97, y: -90}
+      - - {x: -5, y: 90}
+        - {x: -100, y: -79}
+        - {x: -100, y: -90}
+        - {x: 100, y: -90}
+        - {x: 100, y: -80}
+        - {x: 4, y: 90}
+    - name: WashMoss_Rhombus1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 60}
+        - {x: -100, y: -46}
+        - {x: -100, y: -60}
+        - {x: 40, y: -60}
+        - {x: 100, y: 45}
+        - {x: 100, y: 60}
+    - name: WashMoss_RightTriangle1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_FlatTriangle1
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -90}
+        - {x: -100, y: -96}
+        - {x: -95, y: -96}
+        - {x: -93, y: -95}
+        - {x: -93, y: -93}
+        - {x: -95, y: -90}
+      - - {x: 1, y: 32}
+        - {x: -4, y: 32}
+        - {x: -60, y: 0}
+        - {x: -100, y: -24}
+        - {x: -100, y: -30}
+        - {x: 44, y: -31}
+        - {x: 100, y: -31}
+        - {x: 100, y: -24}
+        - {x: 94, y: -18}
+    - name: WashMoss_TallTriangle1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -92}
+        - {x: -62, y: -100}
+        - {x: 62, y: -100}
+        - {x: 62, y: 100}
+        - {x: 53, y: 100}
+        - {x: 48, y: 92}
+    - name: WashMoss_Square2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_EquilateralTriangle2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 90}
+        - {x: -100, y: -79}
+        - {x: -100, y: -90}
+        - {x: 100, y: -90}
+        - {x: 100, y: -80}
+        - {x: 4, y: 90}
+    - name: WashMoss_Rhombus2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 60}
+        - {x: -100, y: -46}
+        - {x: -100, y: -60}
+        - {x: 40, y: -60}
+        - {x: 100, y: 45}
+        - {x: 100, y: 60}
+    - name: WashMoss_RightTriangle2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_FlatTriangle2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 32}
+        - {x: -4, y: 32}
+        - {x: -60, y: 0}
+        - {x: -100, y: -24}
+        - {x: -100, y: -30}
+        - {x: 44, y: -31}
+        - {x: 100, y: -31}
+        - {x: 100, y: -24}
+        - {x: 94, y: -18}
+    - name: WashMoss_TallTriangle2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -92}
+        - {x: -62, y: -100}
+        - {x: 62, y: -100}
+        - {x: 62, y: 100}
+        - {x: 53, y: 100}
+        - {x: 48, y: 92}
+    - name: WashMoss_Square3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_EquilateralTriangle3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 90}
+        - {x: -100, y: -79}
+        - {x: -100, y: -90}
+        - {x: 100, y: -90}
+        - {x: 100, y: -80}
+        - {x: 4, y: 90}
+    - name: WashMoss_Rhombus3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 60}
+        - {x: -100, y: -46}
+        - {x: -100, y: -60}
+        - {x: 40, y: -60}
+        - {x: 100, y: 45}
+        - {x: 100, y: 60}
+    - name: WashMoss_RightTriangle3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_FlatTriangle3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 32}
+        - {x: -4, y: 32}
+        - {x: -60, y: 0}
+        - {x: -100, y: -24}
+        - {x: -100, y: -30}
+        - {x: 44, y: -31}
+        - {x: 100, y: -31}
+        - {x: 100, y: -24}
+        - {x: 94, y: -18}
+    - name: WashMoss_TallTriangle3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -92}
+        - {x: -62, y: -100}
+        - {x: 62, y: -100}
+        - {x: 62, y: 100}
+        - {x: 53, y: 100}
+        - {x: 48, y: 92}
+    - name: WashMoss_Square4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_EquilateralTriangle4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 90}
+        - {x: -100, y: -79}
+        - {x: -100, y: -90}
+        - {x: 100, y: -90}
+        - {x: 100, y: -80}
+        - {x: 4, y: 90}
+    - name: WashMoss_Rhombus4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 60}
+        - {x: -100, y: -46}
+        - {x: -100, y: -60}
+        - {x: 40, y: -60}
+        - {x: 100, y: 45}
+        - {x: 100, y: 60}
+    - name: WashMoss_RightTriangle4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: WashMoss_FlatTriangle4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 1, y: 32}
+        - {x: -4, y: 32}
+        - {x: -60, y: 0}
+        - {x: -100, y: -24}
+        - {x: -100, y: -30}
+        - {x: 44, y: -31}
+        - {x: 100, y: -31}
+        - {x: 100, y: -24}
+        - {x: 94, y: -18}
+    - name: WashMoss_TallTriangle4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: -92}
+        - {x: -62, y: -100}
+        - {x: 62, y: -100}
+        - {x: 62, y: 100}
+        - {x: 53, y: 100}
+        - {x: 48, y: 92}
+    - name: WashMoss_Cracks1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -55, y: -50}
+        - {x: -60, y: -57}
+        - {x: -60, y: -99}
+        - {x: -59, y: -100}
+        - {x: -43, y: -100}
+        - {x: -34, y: -73}
+        - {x: -31, y: -60}
+        - {x: -31, y: -50}
+      - - {x: 8, y: -96}
+        - {x: 17, y: -95}
+        - {x: 20, y: -89}
+        - {x: 20, y: -73}
+        - {x: 13, y: -67}
+        - {x: -26, y: -67}
+        - {x: -36, y: -76}
+        - {x: -36, y: -100}
+        - {x: -17, y: -100}
+        - {x: -3, y: -99}
+        - {x: 7, y: -96}
+        - {x: 5, y: -89}
+      - - {x: 24, y: -91}
+        - {x: 24, y: -100}
+        - {x: 36, y: -100}
+        - {x: 36, y: -91}
+        - {x: 34, y: -89}
+        - {x: 26, y: -89}
+      - - {x: 90, y: -37}
+        - {x: 39, y: -37}
+        - {x: 37, y: -42}
+        - {x: 37, y: -100}
+        - {x: 67, y: -100}
+        - {x: 94, y: -90}
+        - {x: 100, y: -74}
+        - {x: 100, y: -41}
+      - - {x: -65, y: -34}
+        - {x: -100, y: -51}
+        - {x: -100, y: -63}
+        - {x: -87, y: -71}
+        - {x: -81, y: -72}
+        - {x: -56, y: -72}
+        - {x: -51, y: -48}
+        - {x: -51, y: -34}
+      - - {x: -78, y: -12}
+        - {x: -100, y: -17}
+        - {x: -100, y: -31}
+        - {x: -76, y: -37}
+        - {x: -65, y: -37}
+        - {x: -65, y: -12}
+      - - {x: -46, y: 29}
+        - {x: -57, y: 20}
+        - {x: -57, y: -11}
+        - {x: -44, y: -33}
+        - {x: 100, y: -33}
+        - {x: 100, y: -16}
+        - {x: 86, y: 14}
+        - {x: 13, y: 29}
+      - - {x: -100, y: 16}
+        - {x: -91, y: -3}
+        - {x: -75, y: -3}
+        - {x: -62, y: 0}
+        - {x: -62, y: 30}
+        - {x: -100, y: 30}
+      - - {x: 54, y: 15}
+        - {x: 62, y: 13}
+        - {x: 63, y: 14}
+        - {x: 63, y: 41}
+        - {x: 34, y: 65}
+        - {x: -93, y: 65}
+        - {x: -100, y: 64}
+        - {x: -100, y: 47}
+        - {x: -68, y: 21}
+        - {x: -17, y: 4}
+        - {x: 41, y: 4}
+        - {x: 47, y: 17}
+        - {x: 46, y: 23}
+        - {x: 43, y: 27}
+      - - {x: 65, y: 100}
+        - {x: 14, y: 100}
+        - {x: 14, y: 74}
+        - {x: 23, y: 64}
+        - {x: 31, y: 64}
+        - {x: 33, y: 70}
+        - {x: 38, y: 71}
+        - {x: 47, y: 67}
+        - {x: 53, y: 67}
+        - {x: 56, y: 68}
+        - {x: 60, y: 65}
+        - {x: 43, y: 67}
+        - {x: 41, y: 69}
+        - {x: 35, y: 69}
+        - {x: 33, y: 68}
+        - {x: 17, y: 15}
+        - {x: 40, y: 10}
+        - {x: 100, y: 10}
+        - {x: 100, y: 79}
+        - {x: 84, y: 95}
+      - - {x: -89, y: 100}
+        - {x: -91, y: 97}
+        - {x: -91, y: 59}
+        - {x: -81, y: 55}
+        - {x: -56, y: 55}
+        - {x: -36, y: 62}
+        - {x: -36, y: 100}
+      - - {x: -36, y: 100}
+        - {x: -36, y: 86}
+        - {x: -35, y: 72}
+        - {x: -32, y: 67}
+        - {x: 1, y: 67}
+        - {x: 1, y: 92}
+        - {x: -10, y: 100}
+    - name: WashMoss_Vines1
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 27}
+        - {x: -46, y: 23}
+        - {x: -89, y: -37}
+        - {x: -96, y: -58}
+        - {x: -96, y: -87}
+        - {x: -89, y: -91}
+        - {x: -58, y: -91}
+        - {x: -32, y: -64}
+        - {x: -32, y: 27}
+      - - {x: 8, y: -86}
+        - {x: 16, y: -90}
+        - {x: 19, y: -91}
+        - {x: 28, y: -91}
+        - {x: 33, y: -83}
+        - {x: 30, y: -57}
+        - {x: 38, y: -90}
+        - {x: 41, y: -91}
+        - {x: 49, y: -91}
+        - {x: 52, y: -88}
+        - {x: 65, y: -91}
+        - {x: 88, y: -91}
+        - {x: 90, y: -86}
+        - {x: 90, y: -62}
+        - {x: 87, y: -55}
+        - {x: 62, y: -19}
+        - {x: 57, y: -18}
+        - {x: 35, y: 28}
+        - {x: 30, y: 29}
+        - {x: 22, y: 20}
+        - {x: 22, y: 7}
+        - {x: 24, y: -28}
+        - {x: 27, y: -31}
+        - {x: 30, y: -33}
+        - {x: 37, y: -33}
+        - {x: 41, y: -37}
+        - {x: 46, y: -40}
+        - {x: 46, y: -66}
+        - {x: 46, y: -48}
+        - {x: 41, y: -37}
+        - {x: 38, y: -34}
+        - {x: 35, y: -33}
+        - {x: 26, y: -33}
+        - {x: 22, y: -36}
+        - {x: 22, y: 2}
+        - {x: 20, y: 17}
+        - {x: 29, y: 37}
+        - {x: 25, y: 46}
+        - {x: 18, y: 45}
+        - {x: 20, y: 64}
+        - {x: 17, y: 67}
+        - {x: -39, y: 67}
+        - {x: -58, y: -15}
+        - {x: -58, y: -91}
+        - {x: -27, y: -91}
+        - {x: -23, y: -90}
+        - {x: -13, y: -91}
+        - {x: 6, y: -91}
+    - name: WashMoss_Cracks2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: -59}
+        - {x: -56, y: -86}
+        - {x: -56, y: -100}
+        - {x: -8, y: -100}
+        - {x: -8, y: -70}
+        - {x: -15, y: -59}
+      - - {x: 3, y: -95}
+        - {x: 8, y: -100}
+        - {x: 37, y: -100}
+        - {x: 37, y: -52}
+        - {x: 35, y: -40}
+        - {x: 13, y: -40}
+        - {x: 3, y: -54}
+      - - {x: 40, y: -45}
+        - {x: 40, y: -100}
+        - {x: 59, y: -100}
+        - {x: 73, y: -84}
+        - {x: 73, y: -55}
+        - {x: 54, y: -45}
+      - - {x: -100, y: -51}
+        - {x: -100, y: -67}
+        - {x: -90, y: -74}
+        - {x: -61, y: -74}
+        - {x: -53, y: -72}
+        - {x: -53, y: -60}
+        - {x: -54, y: -58}
+        - {x: -70, y: -60}
+        - {x: -89, y: -51}
+      - - {x: 6, y: 45}
+        - {x: 4, y: 44}
+        - {x: 1, y: 36}
+        - {x: 1, y: 1}
+        - {x: 8, y: -28}
+        - {x: 75, y: -63}
+        - {x: 100, y: -63}
+        - {x: 100, y: -50}
+        - {x: 17, y: 45}
+      - - {x: -100, y: -30}
+        - {x: -74, y: -45}
+        - {x: -34, y: -45}
+        - {x: -14, y: -33}
+        - {x: -14, y: -3}
+        - {x: -15, y: -2}
+        - {x: -30, y: -2}
+        - {x: -100, y: -16}
+      - - {x: 73, y: 9}
+        - {x: 64, y: 6}
+        - {x: 64, y: -7}
+        - {x: 82, y: -30}
+        - {x: 100, y: -30}
+        - {x: 100, y: 9}
+      - - {x: -100, y: 30}
+        - {x: -100, y: 18}
+        - {x: -97, y: 18}
+        - {x: -92, y: 23}
+        - {x: -91, y: 27}
+        - {x: -94, y: 30}
+      - - {x: 40, y: 100}
+        - {x: 40, y: 29}
+        - {x: 43, y: 28}
+        - {x: 85, y: 18}
+        - {x: 100, y: 18}
+        - {x: 100, y: 34}
+        - {x: 60, y: 100}
+      - - {x: -38, y: 100}
+        - {x: -38, y: 92}
+        - {x: -32, y: 89}
+        - {x: -37, y: 90}
+        - {x: -42, y: 100}
+        - {x: -57, y: 100}
+        - {x: -58, y: 96}
+        - {x: -58, y: 86}
+        - {x: -56, y: 74}
+        - {x: -46, y: 71}
+        - {x: -32, y: 25}
+        - {x: -24, y: 25}
+        - {x: -2, y: 45}
+        - {x: 0, y: 69}
+        - {x: 0, y: 100}
+      - - {x: -87, y: 36}
+        - {x: -60, y: 36}
+        - {x: -60, y: 47}
+        - {x: -65, y: 61}
+        - {x: -90, y: 64}
+        - {x: -100, y: 64}
+        - {x: -100, y: 45}
+      - - {x: 90, y: 73}
+        - {x: 86, y: 73}
+        - {x: 85, y: 70}
+        - {x: 88, y: 67}
+        - {x: 84, y: 63}
+        - {x: 84, y: 56}
+        - {x: 86, y: 51}
+        - {x: 100, y: 51}
+        - {x: 100, y: 66}
+        - {x: 96, y: 69}
+      - - {x: 80, y: 63}
+        - {x: 82, y: 61}
+        - {x: 85, y: 62}
+        - {x: 85, y: 65}
+        - {x: 83, y: 67}
+        - {x: 80, y: 66}
+      - - {x: 24, y: 100}
+        - {x: 12, y: 87}
+        - {x: 12, y: 76}
+        - {x: 30, y: 63}
+        - {x: 43, y: 63}
+        - {x: 43, y: 100}
+    - name: WashMoss_Vines2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -48, y: -66}
+        - {x: -51, y: -65}
+        - {x: -56, y: -65}
+        - {x: -47, y: -65}
+        - {x: -38, y: -73}
+        - {x: -34, y: -90}
+        - {x: -29, y: -91}
+        - {x: -22, y: -91}
+        - {x: -21, y: -88}
+        - {x: -21, y: -76}
+        - {x: -21, y: -91}
+        - {x: 76, y: -91}
+        - {x: 79, y: -90}
+        - {x: 91, y: -80}
+        - {x: 91, y: -49}
+        - {x: 73, y: -10}
+        - {x: 17, y: 69}
+        - {x: -25, y: 69}
+        - {x: -44, y: 33}
+        - {x: -24, y: 29}
+        - {x: 5, y: 27}
+        - {x: 13, y: 20}
+        - {x: 13, y: 18}
+        - {x: 4, y: 27}
+        - {x: -7, y: 27}
+        - {x: -12, y: 25}
+        - {x: -18, y: 19}
+        - {x: -33, y: 28}
+        - {x: -36, y: 28}
+        - {x: -43, y: 23}
+        - {x: -40, y: 15}
+        - {x: -41, y: -1}
+        - {x: -37, y: -14}
+        - {x: -25, y: -14}
+        - {x: -20, y: -12}
+        - {x: -18, y: -9}
+        - {x: -25, y: -17}
+        - {x: -26, y: -16}
+        - {x: -31, y: -14}
+        - {x: -67, y: -12}
+        - {x: -97, y: -58}
+        - {x: -97, y: -87}
+        - {x: -87, y: -91}
+        - {x: -42, y: -91}
+        - {x: -40, y: -89}
+        - {x: -43, y: -70}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: c3929cc5d505a574eae32ff9f8631351
+timeCreated: 1460847958
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rock 1
+    21300002: Rock 2
+    21300004: Rock 3
+    21300006: Loose Brick
+    21300008: Brick 1
+    21300010: Brick 2
+    21300012: Cobblestone 1
+    21300014: Cobblestone 2
+    21300016: Stone 1
+    21300018: Stone 2
+    21300020: Stone 3
+    21300022: Stone 4
+    21300024: Stone 5
+    21300026: Magma 1
+    21300028: Magma 2
+    21300030: Magma 3
+    21300032: Magma 4
+    21300034: Sandstone 1
+    21300036: Sandstone 2
+    21300038: Sandstone 3
+    21300040: Sandstone 4
+    21300042: Sandstone 5
+    21300044: Sandstone 6
+    21300046: Sandstone 7
+    21300048: Sandstone 8
+    21300050: Sandstone 9
+    21300052: Sandstone 10
+    21300054: Greenstone 1
+    21300056: temp_tile_set_28
+    21300058: temp_tile_set_29
+    21300060: temp_tile_set_30
+    21300062: temp_tile_set_31
+    21300064: temp_tile_set_32
+    21300066: temp_tile_set_33
+    21300068: temp_tile_set_34
+    21300070: temp_tile_set_35
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rock 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Rock 2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Rock 3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1748
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Loose Brick
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Brick 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Brick 2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Cobblestone 1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Cobblestone 2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Stone 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Stone 2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Stone 3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1358
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Stone 4
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Stone 5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Magma 1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Magma 2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Magma 3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Magma 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 953
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 953
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 953
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 953
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 5
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 753
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 558
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 558
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Sandstone 10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: Greenstone 1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 553
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_29
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_30
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_31
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 353
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_33
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: temp_tile_set_35
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 153
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2246 @@
+fileFormatVersion: 2
+guid: 5d08c5d2b993ef342940898dd4c81845
+timeCreated: 1463913357
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Abs
+    100002: Armature
+    100004: BezierCurve
+    100006: Bone
+    100008: Bone.001
+    100010: Bone.002
+    100012: Bone.003
+    100014: Bone.004
+    100016: Bone.005
+    100018: Bone.006
+    100020: Bone.007
+    100022: Bone.007_end
+    100024: //RootNode
+    100026: Front.Ankle.IK.L
+    100028: Front.Ankle.IK.R
+    100030: Front.Heel.L
+    100032: Front.Heel.R
+    100034: Front.Toes.L
+    100036: Front.Toes.L_end
+    100038: Front.Toes.R
+    100040: Front.Toes.R_end
+    100042: Gizmo.Template
+    100044: Group2033
+    100046: Head
+    100048: Head_end
+    100050: Heel.IK
+    100052: Heel.IK.002
+    100054: Heel.IK.002_end
+    100056: Heel.IK_end
+    100058: Hips
+    100060: Knee.Joint.L
+    100062: Knee.Joint.L_end
+    100064: Knee.Joint.R
+    100066: Knee.Joint.R_end
+    100068: Lower.Arm.L
+    100070: Lower.Arm.L_end
+    100072: Lower.Arm.R
+    100074: Lower.Arm.R_end
+    100076: Middle.Leg.L
+    100078: Middle.Leg.R
+    100080: Neck.Lower
+    100082: Neck.Upper
+    100084: Rear.Ankle.IK
+    100086: Rear.Ankle.IK.002
+    100088: Rear.Heel.L
+    100090: Rear.Heel.R
+    100092: Rear.Lower.Leg.L
+    100094: Rear.Lower.Leg.L_end
+    100096: Rear.Lower.Leg.R
+    100098: Rear.Lower.Leg.R_end
+    100100: Rear.Toes.L
+    100102: Rear.Toes.L_end
+    100104: Rear.Toes.R
+    100106: Rear.Toes.R_end
+    100108: Rear.Upper.Leg.L
+    100110: Rear.Upper.Leg.R
+    100112: Shoulder.L
+    100114: Shoulder.R
+    100116: Tail.End
+    100118: Tail.Mid
+    100120: Tail.Start
+    100122: Torso
+    100124: Upper.Arm.L
+    100126: Upper.Arm.R
+    400000: Abs
+    400002: Armature
+    400004: BezierCurve
+    400006: Bone
+    400008: Bone.001
+    400010: Bone.002
+    400012: Bone.003
+    400014: Bone.004
+    400016: Bone.005
+    400018: Bone.006
+    400020: Bone.007
+    400022: Bone.007_end
+    400024: //RootNode
+    400026: Front.Ankle.IK.L
+    400028: Front.Ankle.IK.R
+    400030: Front.Heel.L
+    400032: Front.Heel.R
+    400034: Front.Toes.L
+    400036: Front.Toes.L_end
+    400038: Front.Toes.R
+    400040: Front.Toes.R_end
+    400042: Gizmo.Template
+    400044: Group2033
+    400046: Head
+    400048: Head_end
+    400050: Heel.IK
+    400052: Heel.IK.002
+    400054: Heel.IK.002_end
+    400056: Heel.IK_end
+    400058: Hips
+    400060: Knee.Joint.L
+    400062: Knee.Joint.L_end
+    400064: Knee.Joint.R
+    400066: Knee.Joint.R_end
+    400068: Lower.Arm.L
+    400070: Lower.Arm.L_end
+    400072: Lower.Arm.R
+    400074: Lower.Arm.R_end
+    400076: Middle.Leg.L
+    400078: Middle.Leg.R
+    400080: Neck.Lower
+    400082: Neck.Upper
+    400084: Rear.Ankle.IK
+    400086: Rear.Ankle.IK.002
+    400088: Rear.Heel.L
+    400090: Rear.Heel.R
+    400092: Rear.Lower.Leg.L
+    400094: Rear.Lower.Leg.L_end
+    400096: Rear.Lower.Leg.R
+    400098: Rear.Lower.Leg.R_end
+    400100: Rear.Toes.L
+    400102: Rear.Toes.L_end
+    400104: Rear.Toes.R
+    400106: Rear.Toes.R_end
+    400108: Rear.Upper.Leg.L
+    400110: Rear.Upper.Leg.R
+    400112: Shoulder.L
+    400114: Shoulder.R
+    400116: Tail.End
+    400118: Tail.Mid
+    400120: Tail.Start
+    400122: Torso
+    400124: Upper.Arm.L
+    400126: Upper.Arm.R
+    2300000: BezierCurve
+    3300000: BezierCurve
+    4300000: BezierCurve
+    4300002: Group2033
+    7400000: Tail.Start|Tail.EndAction
+    7400002: Tail.Start|Tail.MidAction
+    7400004: Tail.Start|Tail.StartAction
+    7400006: Tail.End|Tail.EndAction
+    7400008: Tail.End|Tail.MidAction
+    7400010: Tail.End|Tail.StartAction
+    7400012: Tail.Mid|Tail.EndAction
+    7400014: Tail.Mid|Tail.MidAction
+    7400016: Tail.Mid|Tail.StartAction
+    7400018: Armature|ArmatureAction
+    7400020: Armature|Tail.EndAction
+    7400022: Armature|Tail.MidAction
+    7400024: Armature|Tail.StartAction
+    9500000: //RootNode
+    13700000: Group2033
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tail.Start|Tail.EndAction
+      takeName: Tail.Start|Tail.EndAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.Start|Tail.MidAction
+      takeName: Tail.Start|Tail.MidAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.Start|Tail.StartAction
+      takeName: Tail.Start|Tail.StartAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.End|Tail.EndAction
+      takeName: Tail.End|Tail.EndAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.End|Tail.MidAction
+      takeName: Tail.End|Tail.MidAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.End|Tail.StartAction
+      takeName: Tail.End|Tail.StartAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.Mid|Tail.EndAction
+      takeName: Tail.Mid|Tail.EndAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.Mid|Tail.MidAction
+      takeName: Tail.Mid|Tail.MidAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tail.Mid|Tail.StartAction
+      takeName: Tail.Mid|Tail.StartAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Tail.EndAction
+      takeName: Armature|Tail.EndAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Tail.MidAction
+      takeName: Armature|Tail.MidAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Tail.StartAction
+      takeName: Armature|Tail.StartAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L
+        weight: 1
+      - path: Armature/Front.Ankle.IK.L/Front.Heel.L/Front.Toes.L/Front.Toes.L_end
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R
+        weight: 1
+      - path: Armature/Front.Ankle.IK.R/Front.Heel.R/Front.Toes.R/Front.Toes.R_end
+        weight: 1
+      - path: Armature/Heel.IK
+        weight: 1
+      - path: Armature/Heel.IK/Heel.IK_end
+        weight: 1
+      - path: Armature/Heel.IK.002
+        weight: 1
+      - path: Armature/Heel.IK.002/Heel.IK.002_end
+        weight: 1
+      - path: Armature/Hips
+        weight: 1
+      - path: Armature/Hips/Abs
+        weight: 1
+      - path: Armature/Hips/Abs/Torso
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head
+        weight: 1
+      - path: Armature/Hips/Abs/Torso/Neck.Lower/Neck.Upper/Head/Head_end
+        weight: 1
+      - path: Armature/Hips/Bone
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007
+        weight: 1
+      - path: Armature/Hips/Bone/Bone.004/Bone.002/Bone.006/Bone.001/Bone.005/Bone.003/Bone.007/Bone.007_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.L/Middle.Leg.L/Rear.Lower.Leg.L/Rear.Lower.Leg.L_end
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R
+        weight: 1
+      - path: Armature/Hips/Rear.Upper.Leg.R/Middle.Leg.R/Rear.Lower.Leg.R/Rear.Lower.Leg.R_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L
+        weight: 1
+      - path: Armature/Hips/Shoulder.L/Upper.Arm.L/Lower.Arm.L/Lower.Arm.L_end
+        weight: 1
+      - path: Armature/Hips/Shoulder.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R
+        weight: 1
+      - path: Armature/Hips/Shoulder.R/Upper.Arm.R/Lower.Arm.R/Lower.Arm.R_end
+        weight: 1
+      - path: Armature/Knee.Joint.L
+        weight: 1
+      - path: Armature/Knee.Joint.L/Knee.Joint.L_end
+        weight: 1
+      - path: Armature/Knee.Joint.R
+        weight: 1
+      - path: Armature/Knee.Joint.R/Knee.Joint.R_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L
+        weight: 1
+      - path: Armature/Rear.Ankle.IK/Rear.Heel.L/Rear.Toes.L/Rear.Toes.L_end
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R
+        weight: 1
+      - path: Armature/Rear.Ankle.IK.002/Rear.Heel.R/Rear.Toes.R/Rear.Toes.R_end
+        weight: 1
+      - path: BezierCurve
+        weight: 1
+      - path: Gizmo.Template
+        weight: 1
+      - path: Group2033
+        weight: 1
+      - path: Tail.End
+        weight: 1
+      - path: Tail.Mid
+        weight: 1
+      - path: Tail.Start
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

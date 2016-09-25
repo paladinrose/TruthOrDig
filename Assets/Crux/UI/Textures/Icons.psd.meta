@@ -1,0 +1,101 @@
+fileFormatVersion: 2
+guid: b4e7188dbab01ed42a48817597cfd769
+timeCreated: 1464726107
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Polygon Tool
+    21300002: Paint Brush
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 128
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Polygon Tool
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 61}
+        - {x: -64, y: 27}
+        - {x: -64, y: 0}
+        - {x: -63, y: -6}
+        - {x: -43, y: -62}
+        - {x: 46, y: -62}
+        - {x: 64, y: -30}
+        - {x: 64, y: 24}
+        - {x: 29, y: 61}
+      - - {x: -46, y: 7}
+        - {x: 7, y: 39}
+        - {x: 45, y: 10}
+        - {x: 27, y: -47}
+    - name: Paint Brush
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 896
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 54}
+        - {x: -53, y: 43}
+        - {x: 30, y: -47}
+        - {x: 47, y: -56}
+        - {x: 53, y: -56}
+        - {x: 53, y: -36}
+        - {x: -45, y: 54}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

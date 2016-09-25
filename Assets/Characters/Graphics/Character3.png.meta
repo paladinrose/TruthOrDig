@@ -1,0 +1,1457 @@
+fileFormatVersion: 2
+guid: 1ed1ce15c5af0a74a8767599f23b3f41
+timeCreated: 1434608340
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpelunkyYellow_0
+    21300002: SpelunkyYellow_1
+    21300004: SpelunkyYellow_2
+    21300006: SpelunkyYellow_3
+    21300008: SpelunkyYellow_4
+    21300010: SpelunkyYellow_5
+    21300012: SpelunkyYellow_6
+    21300014: SpelunkyYellow_7
+    21300016: SpelunkyYellow_8
+    21300018: SpelunkyYellow_9
+    21300020: SpelunkyYellow_10
+    21300022: SpelunkyYellow_11
+    21300024: SpelunkyYellow_12
+    21300026: SpelunkyYellow_13
+    21300028: SpelunkyYellow_14
+    21300030: SpelunkyYellow_15
+    21300032: SpelunkyYellow_16
+    21300034: SpelunkyYellow_17
+    21300036: SpelunkyYellow_18
+    21300038: SpelunkyYellow_19
+    21300040: SpelunkyYellow_20
+    21300042: SpelunkyYellow_21
+    21300044: SpelunkyYellow_22
+    21300046: SpelunkyYellow_23
+    21300048: SpelunkyYellow_24
+    21300050: SpelunkyYellow_25
+    21300052: SpelunkyYellow_26
+    21300054: SpelunkyYellow_27
+    21300056: SpelunkyYellow_28
+    21300058: SpelunkyYellow_29
+    21300060: SpelunkyYellow_30
+    21300062: SpelunkyYellow_31
+    21300064: SpelunkyYellow_32
+    21300066: SpelunkyYellow_33
+    21300068: SpelunkyYellow_34
+    21300070: SpelunkyYellow_35
+    21300072: SpelunkyYellow_36
+    21300074: SpelunkyYellow_37
+    21300076: SpelunkyYellow_38
+    21300078: SpelunkyYellow_39
+    21300080: SpelunkyYellow_40
+    21300082: SpelunkyYellow_41
+    21300084: SpelunkyYellow_42
+    21300086: SpelunkyYellow_43
+    21300088: SpelunkyYellow_44
+    21300090: SpelunkyYellow_45
+    21300092: SpelunkyYellow_46
+    21300094: SpelunkyYellow_47
+    21300096: SpelunkyYellow_48
+    21300098: SpelunkyYellow_49
+    21300100: SpelunkyYellow_50
+    21300102: SpelunkyYellow_51
+    21300104: SpelunkyYellow_52
+    21300106: SpelunkyYellow_53
+    21300108: SpelunkyYellow_54
+    21300110: SpelunkyYellow_55
+    21300112: SpelunkyYellow_56
+    21300114: SpelunkyYellow_57
+    21300116: SpelunkyYellow_58
+    21300118: SpelunkyYellow_59
+    21300120: SpelunkyYellow_60
+    21300122: SpelunkyYellow_61
+    21300124: SpelunkyYellow_62
+    21300126: SpelunkyYellow_63
+    21300128: SpelunkyYellow_64
+    21300130: SpelunkyYellow_65
+    21300132: SpelunkyYellow_66
+    21300134: SpelunkyYellow_67
+    21300136: SpelunkyYellow_68
+    21300138: SpelunkyYellow_69
+    21300140: SpelunkyYellow_70
+    21300142: SpelunkyYellow_71
+    21300144: SpelunkyYellow_72
+    21300146: SpelunkyYellow_73
+    21300148: SpelunkyYellow_74
+    21300150: SpelunkyYellow_75
+    21300152: SpelunkyYellow_76
+    21300154: SpelunkyYellow_77
+    21300156: SpelunkyYellow_78
+    21300158: SpelunkyYellow_79
+    21300160: SpelunkyYellow_80
+    21300162: SpelunkyYellow_81
+    21300164: SpelunkyYellow_82
+    21300166: SpelunkyYellow_83
+    21300168: SpelunkyYellow_84
+    21300170: SpelunkyYellow_85
+    21300172: SpelunkyYellow_86
+    21300174: SpelunkyYellow_87
+    21300176: SpelunkyYellow_88
+    21300178: SpelunkyYellow_89
+    21300180: SpelunkyYellow_90
+    21300182: SpelunkyYellow_91
+    21300184: SpelunkyYellow_92
+    21300186: SpelunkyYellow_93
+    21300188: SpelunkyYellow_94
+    21300190: SpelunkyYellow_95
+    21300192: SpelunkyYellow_96
+    21300194: SpelunkyYellow_97
+    21300196: SpelunkyYellow_98
+    21300198: SpelunkyYellow_99
+    21300200: SpelunkyYellow_100
+    21300202: SpelunkyYellow_101
+    21300204: SpelunkyYellow_102
+    21300206: SpelunkyYellow_103
+    21300208: SpelunkyYellow_104
+    21300210: SpelunkyYellow_105
+    21300212: SpelunkyYellow_106
+    21300214: SpelunkyYellow_107
+    21300216: SpelunkyYellow_108
+    21300218: SpelunkyYellow_109
+    21300220: SpelunkyYellow_110
+    21300222: SpelunkyYellow_111
+    21300224: SpelunkyYellow_112
+    21300226: SpelunkyYellow_113
+    21300228: SpelunkyYellow_114
+    21300230: SpelunkyYellow_115
+    21300232: SpelunkyYellow_116
+    21300234: SpelunkyYellow_117
+    21300236: SpelunkyYellow_118
+    21300238: SpelunkyYellow_119
+    21300240: SpelunkyYellow_120
+    21300242: SpelunkyYellow_121
+    21300244: SpelunkyYellow_122
+    21300246: SpelunkyYellow_123
+    21300248: SpelunkyYellow_124
+    21300250: SpelunkyYellow_125
+    21300252: SpelunkyYellow_126
+    21300254: SpelunkyYellow_127
+    21300256: SpelunkyYellow_128
+    21300258: SpelunkyYellow_129
+    21300260: SpelunkyYellow_130
+    21300262: SpelunkyYellow_131
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 65
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SpelunkyYellow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_7
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 944
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_18
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_19
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_20
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_21
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 864
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_23
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_25
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_28
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_29
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_30
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_32
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 784
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_34
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_38
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_40
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_42
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_43
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_44
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 704
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_46
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_48
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_49
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_50
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_52
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_53
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_54
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 624
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_57
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_59
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_61
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_62
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_63
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_65
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_66
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_67
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 544
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_69
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_71
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_72
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_73
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_74
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_75
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_77
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_78
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_79
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 464
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_81
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_82
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_85
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_86
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_87
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_88
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_89
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 384
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_93
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_95
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_96
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_97
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 304
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_99
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_100
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_101
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_102
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_103
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_104
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_105
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_106
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_107
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_108
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_109
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 224
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_111
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_113
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_114
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_115
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_116
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_117
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_118
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_119
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 144
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_123
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_124
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_125
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_127
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SpelunkyYellow_128
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

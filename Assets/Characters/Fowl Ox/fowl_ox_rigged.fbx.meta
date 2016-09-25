@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 93d01380d5646524eab23c656dad237a
+timeCreated: 1463913361
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Abs
+    100002: Armature
+    100004: BezierCurve
+    100006: Bone
+    100008: Bone.001
+    100010: Bone.002
+    100012: Bone.003
+    100014: Bone.004
+    100016: Bone.005
+    100018: Bone.006
+    100020: Bone.007
+    100022: Bone.007_end
+    100024: Fowl.Beak_Group17437.001
+    100026: Fowl.Body_ZBrush_defualt_group
+    100028: Fowl.Eyes_Group11715
+    100030: //RootNode
+    100032: Front.Ankle.IK.L
+    100034: Front.Ankle.IK.R
+    100036: Front.Heel.L
+    100038: Front.Heel.R
+    100040: Front.Toes.L
+    100042: Front.Toes.L_end
+    100044: Front.Toes.R
+    100046: Front.Toes.R_end
+    100048: Gizmo.Template
+    100050: Head
+    100052: Head_end
+    100054: Heel.IK
+    100056: Heel.IK.002
+    100058: Heel.IK.002_end
+    100060: Heel.IK_end
+    100062: Hips
+    100064: Knee.Joint.L
+    100066: Knee.Joint.L_end
+    100068: Knee.Joint.R
+    100070: Knee.Joint.R_end
+    100072: Lower.Arm.L
+    100074: Lower.Arm.L_end
+    100076: Lower.Arm.R
+    100078: Lower.Arm.R_end
+    100080: Middle.Leg.L
+    100082: Middle.Leg.R
+    100084: Neck.Lower
+    100086: Neck.Upper
+    100088: Rear.Ankle.IK
+    100090: Rear.Ankle.IK.002
+    100092: Rear.Heel.L
+    100094: Rear.Heel.R
+    100096: Rear.Lower.Leg.L
+    100098: Rear.Lower.Leg.L_end
+    100100: Rear.Lower.Leg.R
+    100102: Rear.Lower.Leg.R_end
+    100104: Rear.Toes.L
+    100106: Rear.Toes.L_end
+    100108: Rear.Toes.R
+    100110: Rear.Toes.R_end
+    100112: Rear.Upper.Leg.L
+    100114: Rear.Upper.Leg.R
+    100116: Shoulder.L
+    100118: Shoulder.R
+    100120: Tail.End
+    100122: Tail.Mid
+    100124: Tail.Start
+    100126: Torso
+    100128: Upper.Arm.L
+    100130: Upper.Arm.R
+    400000: Abs
+    400002: Armature
+    400004: BezierCurve
+    400006: Bone
+    400008: Bone.001
+    400010: Bone.002
+    400012: Bone.003
+    400014: Bone.004
+    400016: Bone.005
+    400018: Bone.006
+    400020: Bone.007
+    400022: Bone.007_end
+    400024: Fowl.Beak_Group17437.001
+    400026: Fowl.Body_ZBrush_defualt_group
+    400028: Fowl.Eyes_Group11715
+    400030: //RootNode
+    400032: Front.Ankle.IK.L
+    400034: Front.Ankle.IK.R
+    400036: Front.Heel.L
+    400038: Front.Heel.R
+    400040: Front.Toes.L
+    400042: Front.Toes.L_end
+    400044: Front.Toes.R
+    400046: Front.Toes.R_end
+    400048: Gizmo.Template
+    400050: Head
+    400052: Head_end
+    400054: Heel.IK
+    400056: Heel.IK.002
+    400058: Heel.IK.002_end
+    400060: Heel.IK_end
+    400062: Hips
+    400064: Knee.Joint.L
+    400066: Knee.Joint.L_end
+    400068: Knee.Joint.R
+    400070: Knee.Joint.R_end
+    400072: Lower.Arm.L
+    400074: Lower.Arm.L_end
+    400076: Lower.Arm.R
+    400078: Lower.Arm.R_end
+    400080: Middle.Leg.L
+    400082: Middle.Leg.R
+    400084: Neck.Lower
+    400086: Neck.Upper
+    400088: Rear.Ankle.IK
+    400090: Rear.Ankle.IK.002
+    400092: Rear.Heel.L
+    400094: Rear.Heel.R
+    400096: Rear.Lower.Leg.L
+    400098: Rear.Lower.Leg.L_end
+    400100: Rear.Lower.Leg.R
+    400102: Rear.Lower.Leg.R_end
+    400104: Rear.Toes.L
+    400106: Rear.Toes.L_end
+    400108: Rear.Toes.R
+    400110: Rear.Toes.R_end
+    400112: Rear.Upper.Leg.L
+    400114: Rear.Upper.Leg.R
+    400116: Shoulder.L
+    400118: Shoulder.R
+    400120: Tail.End
+    400122: Tail.Mid
+    400124: Tail.Start
+    400126: Torso
+    400128: Upper.Arm.L
+    400130: Upper.Arm.R
+    2300000: BezierCurve
+    3300000: BezierCurve
+    4300000: BezierCurve
+    4300002: Fowl.Eyes_Group11715
+    4300004: Fowl.Beak_Group17437.001
+    4300006: Fowl.Body_ZBrush_defualt_group
+    9500000: //RootNode
+    13700000: Fowl.Beak_Group17437.001
+    13700002: Fowl.Body_ZBrush_defualt_group
+    13700004: Fowl.Eyes_Group11715
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

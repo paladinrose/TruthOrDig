@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: a2fc1f6cedfbbd94389d928782152005
+timeCreated: 1462649285
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TestTileSet_0
+    21300002: TestTileSet_1
+    21300004: TestTileSet_2
+    21300006: TestTileSet_3
+    21300008: TestTileSet_4
+    21300010: TestTileSet_5
+    21300012: TestTileSet_6
+    21300014: TestTileSet_7
+    21300016: TestTileSet_8
+    21300018: TestTileSet_9
+    21300020: TestTileSet_10
+    21300022: TestTileSet_11
+    21300024: TestTileSet_12
+    21300026: TestTileSet_14
+    21300028: TestTileSet_15
+    21300030: TestTileSet_16
+    21300032: TestTileSet_17
+    21300034: TestTileSet_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 200
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TestTileSet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 89}
+        - {x: -42, y: 70}
+        - {x: -100, y: -63}
+        - {x: -100, y: -91}
+        - {x: 99, y: -91}
+        - {x: 100, y: -90}
+        - {x: 100, y: -76}
+        - {x: 13, y: 89}
+    - name: TestTileSet_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 61}
+        - {x: -85, y: -23}
+        - {x: -100, y: -51}
+        - {x: -100, y: -60}
+        - {x: -37, y: -61}
+        - {x: 34, y: -61}
+        - {x: 38, y: -59}
+        - {x: 100, y: 51}
+        - {x: 100, y: 60}
+        - {x: 36, y: 61}
+    - name: TestTileSet_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 100}
+        - {x: 31, y: 35}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 31}
+        - {x: -10, y: 31}
+        - {x: -100, y: -20}
+        - {x: -100, y: -30}
+        - {x: -41, y: -31}
+        - {x: 38, y: -31}
+        - {x: 100, y: -30}
+        - {x: 100, y: -24}
+        - {x: 93, y: -20}
+    - name: TestTileSet_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1000
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: -72}
+        - {x: -60, y: -97}
+        - {x: -60, y: -100}
+        - {x: 60, y: -100}
+        - {x: 60, y: 100}
+        - {x: 54, y: 100}
+        - {x: 35, y: 69}
+    - name: TestTileSet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_7
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 89}
+        - {x: -100, y: -76}
+        - {x: -100, y: -91}
+        - {x: -44, y: -93}
+        - {x: 100, y: -93}
+        - {x: 100, y: -49}
+        - {x: 5, y: 89}
+    - name: TestTileSet_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -36, y: 61}
+        - {x: -85, y: -23}
+        - {x: -100, y: -51}
+        - {x: -100, y: -60}
+        - {x: -37, y: -61}
+        - {x: 34, y: -61}
+        - {x: 38, y: -59}
+        - {x: 100, y: 51}
+        - {x: 100, y: 60}
+        - {x: 36, y: 61}
+    - name: TestTileSet_9
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 100}
+        - {x: 31, y: 35}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_10
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 31}
+        - {x: -10, y: 31}
+        - {x: -100, y: -20}
+        - {x: -100, y: -30}
+        - {x: -41, y: -31}
+        - {x: 38, y: -31}
+        - {x: 100, y: -30}
+        - {x: 100, y: -24}
+        - {x: 93, y: -20}
+    - name: TestTileSet_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 800
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -51, y: -72}
+        - {x: -60, y: -97}
+        - {x: -60, y: -100}
+        - {x: 60, y: -100}
+        - {x: 60, y: 100}
+        - {x: 54, y: 100}
+        - {x: 35, y: 69}
+    - name: TestTileSet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 100}
+        - {x: -100, y: -96}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 100}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 400
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    - name: TestTileSet_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 100}
+        - {x: -100, y: -97}
+        - {x: -100, y: -100}
+        - {x: 100, y: -100}
+        - {x: 100, y: 100}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
