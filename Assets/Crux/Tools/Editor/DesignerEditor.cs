@@ -21,9 +21,9 @@ namespace Crux{
 		string[] paintModes = new string[] {"Free", "Tile" };
 		static Texture[] icons;
 		Texture[] paintPreview = new Texture[0];
-		float pointSnap = 10, areaScrollHeight, posScrollHeight, negScrollHeight, splineScrollHeight, tileScrollHeight, palScrollHeight;
-		Vector2 areaScroll, posScroll, negScroll, splineScroll, tileScroll, palScroll;
-		bool showShapes, showHoles, showSplines, showTiles, showPallet, toolInUse;
+		float pointSnap = 10, areaScrollHeight, posScrollHeight, negScrollHeight, splineScrollHeight, tileScrollHeight, palScrollHeight, splineSegScrollHeight;
+		Vector2 areaScroll, posScroll, negScroll, splineScroll, tileScroll, palScroll, splineSegScroll;
+		bool showShapes, showHoles, showSplines, showTiles, showSplineSegments, showPallet, toolInUse ,updateCurrentAreaEditor;
 		TileGroup.WallpaperGroup selectedWallpaper;
 
 		DesignAreaEditor currentAreaEditor;
@@ -73,19 +73,51 @@ namespace Crux{
 			updateTime = EditorApplication.timeSinceStartup + 1.5d;
 		}
 		public void GetPaintPreviews(){
-			List<Texture> pP = new List<Texture> ();
-			int dif = designer.painter.pallet.Length;
-			for (int i = 0; i < dif; i++) {
-				if (designer.painter.pallet [i].baseItem != null) {
-					pP.Add (AssetPreview.GetAssetPreview (designer.painter.pallet [i].baseItem));
-				} else {
-					//This is a place holder. I need to make an X or some other type of None icon and use that.
-					pP.Add(icons[11]);
-				}
-			}
-
-			paintPreview = pP.ToArray ();
+            if (paintLoader == null)
+            {
+                paintPreview = new Texture[designer.painter.pallet.Length];
+                for (int i = designer.painter.pallet.Length - 1; i >= 0; i--)
+                {
+                    paintPreview[i] = icons[11];
+                }
+                paintLoader = LoadPaintPreview();
+                EditorApplication.update += PaintPreviewLoader;
+            }
 		}
+        IEnumerator paintLoader;
+        void PaintPreviewLoader()
+        {
+            if (!paintLoader.MoveNext())
+            {
+                paintLoader = null;
+                EditorApplication.update -= PaintPreviewLoader;
+            }
+        }
+        IEnumerator LoadPaintPreview() {
+            
+           // List<Texture> pP = new List<Texture>();
+            int dif = designer.painter.pallet.Length;
+            
+            for (int i = 0; i < dif; i++)
+            {
+
+                if (designer.painter.pallet[i].baseItem != null)
+                {
+                    paintPreview[i] = AssetPreview.GetAssetPreview(designer.painter.pallet[i].baseItem.gameObject);
+                
+                    while (AssetPreview.IsLoadingAssetPreviews())
+                    {
+                         
+                        yield return null;
+                        Repaint();
+                    }
+                }
+                yield return null;
+            }
+            yield return null;
+           // Debug.Log("Loading asset previews complete!");
+           // paintPreview = pP.ToArray();
+        }
 		public override void OnInspectorGUI(){
 
 			if (buttonStyle == null) {
@@ -213,7 +245,7 @@ namespace Crux{
 			//Button to add a brand new area.
 			if (GUILayout.Button ("New Area")) {
 				List<DesignArea> arList = new List<DesignArea> (designer.areas);
-				DesignArea desToAdd = new GameObject ("Area " + arList.Count + 1).AddComponent<DesignArea> ();
+				DesignArea desToAdd = new GameObject ("Area " + (arList.Count + 1).ToString()).AddComponent<DesignArea> ();
 				desToAdd.transform.parent = designer.transform;
 				desToAdd.areaName = desToAdd.gameObject.name;
 				arList.Add (desToAdd);
@@ -509,6 +541,9 @@ namespace Crux{
                         //Fill
                         EditorGUILayout.Space();
                         EditorGUILayout.Space();
+                        designer.fillDistance = EditorGUILayout.FloatField("Fill Spacing", designer.fillDistance);
+                        designer.fillOverlapTolerance = EditorGUILayout.FloatField("Overlap Tolerance", designer.fillOverlapTolerance);
+                        designer.fillSpread = EditorGUILayout.IntField("Fill Spread", designer.fillSpread);
                         DrawPaintParameters(r, c, cc);
                         break;
 					case 5:
@@ -520,8 +555,71 @@ namespace Crux{
 					}
 					break;
 				case 1:
-					//Splines
-					switch (selectedTool) {
+                    //Splines
+                    
+                    showSplineSegments = GUILayout.Toggle(showSplineSegments, "Spline Segments");
+                    if (showSplineSegments)
+                    {
+                        currentSelection -= designer.areas[currentArea].shapes.Length + designer.areas[currentArea].holes.Length;
+                        splineSegScroll = GUILayout.BeginScrollView(splineSegScroll, GUI.skin.box, GUILayout.Height(splineSegScrollHeight));
+                        dar = designer.areas[currentArea].splines[currentSelection].Sections;
+                        rem = -1;
+                        for (int i = 0; i < dar; i++)
+                        {
+                            GUILayout.BeginHorizontal();
+                            int seg = EditorGUILayout.IntPopup(designer.areas[currentArea].splines[currentSelection].sectionTypes[i],
+                            new string[] { "CatmullRom", "Linear", "Cubic Bezier" }, new int[] {0,1,2});
+                            if(seg != designer.areas[currentArea].splines[currentSelection].sectionTypes[i])
+                            {
+                                designer.areas[currentArea].splines[currentSelection].sectionTypes[i] = seg;
+                                updateCurrentAreaEditor = true;
+                                Repaint();
+                                RedrawSceneView();
+                            }
+
+                            float wgt = EditorGUILayout.FloatField(designer.areas[currentArea].splines[currentSelection].sectionWeights[i]);
+                            if (wgt != designer.areas[currentArea].splines[currentSelection].sectionWeights[i])
+                            {
+                                designer.areas[currentArea].splines[currentSelection].sectionWeights[i] = wgt;
+                                updateCurrentAreaEditor = true;
+                                Repaint();
+                                RedrawSceneView();
+                            }
+                            GUI.backgroundColor = r;
+                            GUI.contentColor = Color.white;
+                            if (GUILayout.Button("X", buttonStyle, GUILayout.Width(lineHeight)))
+                            {
+                                rem = i;
+                            }
+                            GUI.backgroundColor = c;
+                            GUI.contentColor = cc;
+                            GUILayout.EndHorizontal();
+                        }
+                        GUILayout.EndScrollView();
+                        if (rem >= 0)
+                        {
+                           
+                            List<int> st = new List<int>(designer.areas[currentArea].splines[currentSelection].sectionTypes);
+                            List<float> wt = new List<float>(designer.areas[currentArea].splines[currentSelection].sectionWeights);
+                            st.RemoveAt(rem); wt.RemoveAt(rem);
+                            designer.areas[currentArea].splines[currentSelection].sectionTypes = st.ToArray();
+                            designer.areas[currentArea].splines[currentSelection].sectionWeights = wt.ToArray();
+                            if (st.Count < 6)
+                            {
+                                splineSegScrollHeight = (st.Count + 1) * lineHeight;
+                            }
+                            else
+                            {
+                                splineSegScrollHeight = 6 * lineHeight;
+                            }
+                        }
+
+                        currentSelection += designer.areas[currentArea].shapes.Length + designer.areas[currentArea].holes.Length;
+                        
+                    }
+
+
+                    switch (selectedTool) {
 					case 2:
 						//Tile
 						selectedWallpaper = (TileGroup.WallpaperGroup)EditorGUILayout.EnumPopup("Wallpaper",selectedWallpaper); 
@@ -640,6 +738,7 @@ namespace Crux{
         }
 
 		public void OnSceneGUI(){
+            
 			camera = SceneView.currentDrawingSceneView.camera;
 			HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
 			key = 0;
@@ -657,8 +756,8 @@ namespace Crux{
 				key = 3;
 
 			}
-
-			if(selectedArea != -1){
+            
+            if (selectedArea != -1){
 				if (currentArea != selectedArea) {
 					currentArea = selectedArea;
 					currentSelection = -1;
@@ -667,13 +766,18 @@ namespace Crux{
 				if (currentArea >= 0) {
 					//Debug.Log (currentArea + " " + designer.areas.Length);
 					currentAreaEditor = new DesignAreaEditor (designer.areas [currentArea], designer.splineSmoothing);
+                    updateCurrentAreaEditor = false;
 				}
 				selectedArea = -1;
 				selectedTab = -1;
 				RedrawSceneView ();
 			}
-
-			if (currentArea >= 0 && currentArea < designer.areas.Length) {
+            if (updateCurrentAreaEditor)
+            {
+                currentAreaEditor = new DesignAreaEditor(designer.areas[currentArea], designer.splineSmoothing);
+                updateCurrentAreaEditor = false;
+            }
+            if (currentArea >= 0 && currentArea < designer.areas.Length) {
 				if (currentSelection >= 0) {
 					int selC = designer.areas [currentArea].shapes.Length + currentAreaEditor.holes.Length;
 					if (currentSelection < selC) {
@@ -750,7 +854,7 @@ namespace Crux{
 							GUILayout.Box (icons [9], GUILayout.Width (lineHeight * 2));
 							GUI.backgroundColor = bg;
 						}
-                            /*
+                            
                             if (selectedTool != 4 ){
                                 if (GUILayout.Button (new GUIContent (icons [10], "Fill shape with paint."), GUI.skin.box, GUILayout.Width (lineHeight * 2))) {
                                     selectedTool = 4;
@@ -778,13 +882,34 @@ namespace Crux{
                                 GUILayout.Box (icons [8], GUILayout.Width (lineHeight * 2));
                                 GUI.backgroundColor = bg;
                             }
-                            */
+                            if (selectedTool != 7 ){
+                                if (GUILayout.Button (new GUIContent (icons [2], "Create Spline from shape."), GUI.skin.box, GUILayout.Width (lineHeight * 2))) {
+                                    selectedTool = 7;
+                                }
+                            }else {
+                                GUI.backgroundColor = Color.white;
+                                GUILayout.Box (icons [2], GUILayout.Width (lineHeight * 2));
+                                GUI.backgroundColor = bg;
+                            }
+                            if (selectedTool != 8 ){
+                                if (GUILayout.Button (new GUIContent (icons [10], "Create Sprite from shape."), GUI.skin.box, GUILayout.Width (lineHeight * 2))) {
+                                    selectedTool = 8;
+                                }
+                            }else {
+                                GUI.backgroundColor = Color.white;
+                                GUILayout.Box (icons [10], GUILayout.Width (lineHeight * 2));
+                                GUI.backgroundColor = bg;
+                            }
+                            
+                            /*
                             GUI.backgroundColor = Color.red;
                             GUILayout.Box(icons[10], GUILayout.Width(lineHeight * 2));
                             GUILayout.Box(icons[9], GUILayout.Width(lineHeight * 2));
                             GUILayout.Box(icons[8], GUILayout.Width(lineHeight * 2));
+                            GUILayout.Box(icons[2], GUILayout.Width(lineHeight * 2));
+                            GUILayout.Box(icons[10], GUILayout.Width(lineHeight * 2));
                             GUI.backgroundColor = bg;
-
+                            */
 
                             break;
 
@@ -820,7 +945,7 @@ namespace Crux{
 							GUI.backgroundColor = bg;
 						}
 
-                        /*
+                        
 						if (selectedTool != 3) {
 							if (GUILayout.Button (new GUIContent(icons [9],"Paint along spline."),GUI.skin.box, GUILayout.Width (lineHeight*2))) {
 								selectedTool = 3;
@@ -841,11 +966,6 @@ namespace Crux{
                             GUILayout.Box (icons [1], GUILayout.Width (lineHeight * 2));
                             GUI.backgroundColor = bg;
                         }
-                         */
-                        GUI.backgroundColor = Color.red;
-                        GUILayout.Box(icons[9], GUILayout.Width(lineHeight * 2));
-                        GUILayout.Box(icons[1], GUILayout.Width(lineHeight * 2));
-                        GUI.backgroundColor = bg;
                         break;
 
 					case 2:
@@ -958,14 +1078,14 @@ namespace Crux{
 
 			if (id >= 0 && id < currentAreaEditor.tileGroups.Length) {
 				if (!selected) {
-					//Debug.Log ("Colorswap!");
+					
 					primary = currentAreaEditor.tileGroups [id].color;
 					secondary = designer.areas[currentArea].tileGroups [id].sColor;
 				}
 
 				switch (designer.areas [currentArea].canvasType) {
 				case Designer.DesignCanvasType.Mesh:
-					bool[] alreadyUsed = new bool[currentAreaEditor.tileGroups [id].points.Length];
+					
 					for (int i = designer.areas [currentArea].tileGroups [id].edges.Length - 1; i >= 0; i--) {
 						if (!designer.areas [currentArea].tileGroups [id].edges [i].isBorder) {
 							Handles.color = secondary;
@@ -1368,6 +1488,7 @@ namespace Crux{
 
 				break;
 			case 3:
+                    //Free Paint
                     /*
                      * Currently selected shape, no handles, Free Paint side window
                      */
@@ -1389,6 +1510,10 @@ namespace Crux{
 						break;
 					//Paint in all shapes.
 					case 1:
+                        for(i = currentAreaEditor.shapes.Length-1; i >=0; i--)
+                        {
+                            if(i != currentSelection) { DrawPolygon(i); }
+                        }
                         if (Event.current.isMouse && Event.current.type == EventType.MouseDown)
                         {
                             if (designer.areas[currentArea].Contains(mousePos, -1))
@@ -1441,43 +1566,76 @@ namespace Crux{
 				}
 				break;
 			case 4:
+				//Paint Fill
 				
-				DrawPolygon (currentSelection);
                 if (!toolInUse)
                 {
+                    DrawPolygon(currentSelection);
                     //On mouse up, start paint-filling from the current point outward using our paint settings. Don't leave the shape and don't fill holes.
                     if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection))
                     {
-                            // fillSpread -  is the radial number of Paint Samples that each paint sample will make.
-                            // fillDistance - is the distance each sample will move radially outward when copying.
+                        // fillSpread -  is the radial number of Paint Samples that each paint sample will make.
+                        // fillDistance - is the distance each sample will move radially outward when copying.
 
-                            //Start at our mouse position, assuming it's inside the shape. Go outward by fillDistance in 
-                            //fillSpread radial directions away from it.toolInUse = true;
-                            paintPos = mousePos;
-                            currentRate = EditorApplication.timeSinceStartup + designer.painter.rate;
-                            tilePolyCheck = designer.FillPolygon(currentArea, currentSelection, mousePos);
-                            EditorApplication.update += FillPaint;
-                        }
+                        //Start at our mouse position, assuming it's inside the shape. Go outward by fillDistance in 
+                        //fillSpread radial directions away from it.toolInUse = true;
+                        toolInUse = true;
+                        paintPos = mousePos;
+                        currentRate = EditorApplication.timeSinceStartup + designer.painter.rate;
+                        tilePolyCheck = designer.FillPolygon(currentArea, currentSelection, mousePos);
+                        EditorApplication.update += FillPaint;
+                    }
                 }
 				break;
             case 5:
-
-                DrawPolygon(currentSelection);
-                //On mouse up, if within shape,outline it with paint. Check for Edge Holes and clip around them.
-                if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection))
+                //Paint Outline
+                if (!toolInUse)
                 {
-
+                    DrawPolygon(currentSelection);
+                    //On mouse up, if within shape,outline it with paint. Check for Edge Holes and clip around them.
+                    if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection))
+                    {
+                            toolInUse = true;
+                            tilePolyCheck = designer.PaintPolygon(currentArea, currentSelection);
+                            EditorApplication.update += PaintSpline;
+                    }
                 }
                 break;
             case 6:
-				
+				//Collider
 				DrawPolygon (currentSelection);
 				//On mouse up, if within shape, create a collider out of it. Check for Edge Holes and clip around them.
 				if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection)) {
-					
-				}
+                    designer.areas[currentArea].ConvertShapeToCollider(currentSelection);
+                    updateCurrentAreaEditor = true;
+                    Repaint();
+                }
 				break;
-			}
+            case 7:
+                //Spline
+                DrawPolygon(currentSelection);
+                //On mouse up, if within shape, create a spline out of it. Check for Edge Holes and clip around them.
+                if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection))
+                {
+                    designer.areas[currentArea].ConvertShapeToSpline(currentSelection);
+                    updateCurrentAreaEditor = true;
+                    currentSelection = currentAreaEditor.shapes.Length + currentAreaEditor.holes.Length + 
+                    currentAreaEditor.splines.Length - 1;
+                    selectedTool = 0;
+                    Repaint();
+                }
+                break;
+            case 8:
+                //Sprite
+                DrawPolygon(currentSelection);
+                //On mouse up, if within shape, create a sprite out of it. Check for Edge Holes and clip around them.
+                if (Event.current.isMouse && Event.current.type == EventType.MouseUp && designer.areas[currentArea].Contains(mousePos, currentSelection))
+                {
+                    designer.areas[currentArea].ConvertShapeToMesh(currentSelection);
+                   
+                }
+                break;
+            }
 
 			Handles.color = handlesColor;
 			GUI.color = guiColor;
@@ -1684,43 +1842,42 @@ namespace Crux{
 			case 2:
 				if(!toolInUse){
 					//tile along spline
-					//Get the bounds of our spline. Tile that whole area. Check which tiles intersect the spline itself. Delete all others.
-
-					//Add a button here.
+					
 					i = currentSelection -currentAreaEditor.shapes.Length - currentAreaEditor.holes.Length;
-					DrawSpline(i);
+					DrawSpline(currentSelection);
 
 					if (Handles.Button (currentAreaEditor.splineControls [i].centerPoint, Quaternion.identity, 0.1f,  0.125f, Handles.DotCap)) {
 
 						toolInUse = true;
 						Rect splineBounds = new Rect ();
-						for (i = currentAreaEditor.splines [currentSelection].points.Length - 1; i >= 0; i--) {
-							if (currentAreaEditor.splines [currentSelection].points [i].x > splineBounds.xMax) {
-								splineBounds.xMax = currentAreaEditor.splines [currentSelection].points [i].x;
+						for (j = currentAreaEditor.splines [i].points.Length - 1; j >= 0; j--) {
+							if (currentAreaEditor.splines [i].points [j].x > splineBounds.xMax) {
+								splineBounds.xMax = currentAreaEditor.splines [i].points [j].x;
 							}
-							if (currentAreaEditor.splines [currentSelection].points [i].x < splineBounds.xMin) {
-								splineBounds.xMin = currentAreaEditor.splines [currentSelection].points [i].x;
+							if (currentAreaEditor.splines [i].points [j].x < splineBounds.xMin) {
+								splineBounds.xMin = currentAreaEditor.splines [i].points [j].x;
 							}
-							if (currentAreaEditor.splines [currentSelection].points [i].y > splineBounds.yMax) {
-								splineBounds.yMax = currentAreaEditor.splines [currentSelection].points [i].y;
+							if (currentAreaEditor.splines [i].points [j].y > splineBounds.yMax) {
+								splineBounds.yMax = currentAreaEditor.splines [i].points [j].y;
 							}
-							if (currentAreaEditor.splines [currentSelection].points [i].y < splineBounds.yMin) {
-								splineBounds.yMin = currentAreaEditor.splines [currentSelection].points [i].y;
+							if (currentAreaEditor.splines [i].points [j].y < splineBounds.yMin) {
+								splineBounds.yMin = currentAreaEditor.splines [i].points [j].y;
 							}
 						}
 						//Create a polygon from that rect. Add it to our current area.
-						Polygon tempPoly = new Polygon (currentAreaEditor.splines [currentSelection].name);
-						tempPoly.points = new Vector2[4];
-						tempPoly.points [0] = new Vector2 (splineBounds.xMin, splineBounds.yMax);
-						tempPoly.points [1] = new Vector2 (splineBounds.xMax, splineBounds.yMax);
-						tempPoly.points [2] = new Vector2 (splineBounds.xMax, splineBounds.yMin);
-						tempPoly.points [3] = new Vector2 (splineBounds.xMin, splineBounds.yMin);
-
+						Polygon tempPoly = new Polygon (currentAreaEditor.splines [i].name);
+						Vector2[] ppoints = new Vector2[4];
+						ppoints [0] = new Vector2 (splineBounds.xMin, splineBounds.yMax);
+						ppoints [1] = new Vector2 (splineBounds.xMax, splineBounds.yMax);
+						ppoints [2] = new Vector2 (splineBounds.xMax, splineBounds.yMin);
+						ppoints [3] = new Vector2 (splineBounds.xMin, splineBounds.yMin);
+                        tempPoly.points = ppoints;
 						List<Polygon> polys = new List<Polygon> (designer.areas [currentArea].shapes);
 						polys.Add (tempPoly);
 						//Tile that shape.
 						designer.areas [currentArea].shapes = polys.ToArray ();
-						tilePolyCheck = designer.areas [currentArea].TileArea (-1, polys.Count - 1);
+                        tilePolyCheck = designer.areas[currentArea].TileArea(-1, designer.areas[currentArea].shapes.Length - 1, selectedWallpaper, splineBounds.center);
+                        tsc = false;
 						EditorApplication.update += TileSpline;
 					}
 				} 
@@ -1729,7 +1886,7 @@ namespace Crux{
 				//paint along spline
 				if(!toolInUse){
 					i = currentSelection -currentAreaEditor.shapes.Length - currentAreaEditor.holes.Length;
-					DrawSpline(i);
+					DrawSpline(currentSelection);
 
 					if (Handles.Button (currentAreaEditor.splineControls [i].centerPoint, Quaternion.identity, 0.1f,  0.125f, Handles.DotCap)) {
 
@@ -1740,22 +1897,28 @@ namespace Crux{
 				}
 				break;
 			case 4:
-				//make shape
-				//..?
-				break;
+                //make shape
+                i = currentSelection - currentAreaEditor.shapes.Length - currentAreaEditor.holes.Length;
+                DrawSpline(currentSelection);
+
+                if (Handles.Button(currentAreaEditor.splineControls[i].centerPoint, Quaternion.identity, 0.1f, 0.125f, Handles.DotCap))
+                {
+                        designer.areas[currentArea].ConvertSplineToShape(i);
+                        updateCurrentAreaEditor = true;
+                        currentSelection = currentAreaEditor.shapes.Length - 1;
+                }
+                break;
 			}
 		}
 
 		public void TileView(){
-			int cellID;
-			int tp = currentAreaEditor.shapes.Length+ currentAreaEditor.holes.Length + currentAreaEditor.splines.Length;
-			switch (selectedTool) {
+			int cellID, cs,
+            tp = currentAreaEditor.shapes.Length+ currentAreaEditor.holes.Length + currentAreaEditor.splines.Length;
+
+            switch (selectedTool) {
 			case 0:
 				//Select Tilegroup
-
-				//currentSelection -=tp;
-
-
+                
 				for(int i = currentAreaEditor.tileGroups.Length-1; i >=0; i--){
 					
 					if (i+tp != currentSelection) {
@@ -1780,25 +1943,27 @@ namespace Crux{
 
 				break;
 			case 1:
-				//Manipulate tiles.
-				DrawTileGroup(currentSelection-tp);
+                    //Manipulate tiles.
+                    cs = currentSelection - tp;
+				DrawTileGroup(cs);
 				
 				switch(key){
 				case 0:
-					//Put a button in the middle of each cell. Clicking it will select it and open up a properties window for it?
-					for(int i = currentAreaEditor.tilePoints[currentSelection].points.Length; i >=0; i--){
-						Handles.color = Color.green;
-						if (Handles.Button (currentAreaEditor.tilePoints [currentSelection].points [i], Quaternion.identity, 0.1f, 0.15f, Handles.CubeCap)) {
+                            //Put a button in the middle of each cell. Clicking it will select it and open up a properties window for it?
+                    //Debug.Log(currentSelection + "," + currentAreaEditor.tileGroups.Length);
+                    for (int i = currentAreaEditor.tilePoints[cs].points.Length-1; i >=0; i--){
+					    Handles.color = Color.green;
+					    if (Handles.Button (currentAreaEditor.tilePoints [cs].points [i], Quaternion.identity, 0.1f, 0.15f, Handles.CubeCap)) {
 							
-						}
+					    }
 					}
 					break;
 				case 1:
 					//Ctrl will turn them red. Clicking will delete the cell.
-					for(int i = currentAreaEditor.tilePoints[currentSelection].points.Length; i >=0; i--){
+					for(int i = currentAreaEditor.tilePoints[cs].points.Length-1; i >=0; i--){
 						Handles.color = Color.red;
-						if (Handles.Button (currentAreaEditor.tilePoints [currentSelection].points [i], Quaternion.identity, 0.1f, 0.15f, Handles.CubeCap)) {
-							designer.areas [currentArea].tileGroups [currentSelection].RemoveCell (i, true);
+						if (Handles.Button (currentAreaEditor.tilePoints [cs].points [i], Quaternion.identity, 0.1f, 0.15f, Handles.CubeCap)) {
+							designer.areas [currentArea].tileGroups [cs].RemoveCell (i, true);
 							selectedArea = currentArea;
 							EditorUtility.SetDirty (designer);
 							EditorSceneManager.MarkSceneDirty (SceneManager.GetActiveScene ());
@@ -1807,7 +1972,7 @@ namespace Crux{
 					break;
 				case 2:
 					//Snap. Use?
-					for(int i = currentAreaEditor.tilePoints[currentSelection].points.Length; i >=0; i--){
+					for(int i = currentAreaEditor.tilePoints[currentSelection].points.Length-1; i >=0; i--){
 						Handles.color = Color.green;
 						if (Handles.Button (currentAreaEditor.tilePoints [currentSelection].points [i], Quaternion.identity, 0.1f, 0.15f, Handles.CubeCap)) {
 
@@ -1817,7 +1982,7 @@ namespace Crux{
 				case 3:
 					//Shift highlights edges, instead. Clicking them adds a cell on that side?
 					
-					for(int i = designer.areas[currentArea].tileGroups[currentSelection].edges.Length; i >=0; i--){
+					for(int i = designer.areas[currentArea].tileGroups[currentSelection].edges.Length-1; i >=0; i--){
 						if (designer.areas [currentArea].tileGroups [currentSelection].edges [i].isBorder) {
 							Vector3 p = Vector3.Lerp (currentAreaEditor.tileGroups [currentSelection].points [designer.areas [currentArea].tileGroups [currentSelection].edges [i].pointA],
 								           currentAreaEditor.tileGroups [currentSelection].points [designer.areas [currentArea].tileGroups [currentSelection].edges [i].pointB],
@@ -1841,8 +2006,10 @@ namespace Crux{
 				break;
 			
 			case 2:
-				//Create shape
-				switch(key){
+                    //Create shape
+                    cs = currentSelection - tp;
+                    DrawTileGroup(cs);
+                    switch (key){
 				case 0:
 					if (Event.current.isMouse && Event.current.type == EventType.MouseUp
 						&& designer.areas [currentArea].Contains (mousePos, currentSelection)) {
@@ -1919,24 +2086,32 @@ namespace Crux{
 				break;
 
 			case 3:
-				//Paint tiles
-				if (!toolInUse) {
-					mousePos = HandleUtility.GUIPointToWorldRay (Event.current.mousePosition).GetPoint (Vector3.Distance (camera.transform.position, designer.areas [currentArea].transform.position)); 
+                    //Paint tiles
+                    cs = currentSelection - tp;
+                    DrawTileGroup(cs);
+                    mousePos = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition).GetPoint(Vector3.Distance(camera.transform.position, designer.areas[currentArea].transform.position));
+
+                    if (!toolInUse) {
 					switch (key) {
 					case 0:
-						//Paint whatever current cell we're over.
-						if (Event.current.isMouse && Event.current.type == EventType.MouseDown
-						    && designer.areas [currentArea].Contains (mousePos, currentSelection)) {
-							EditorApplication.update += FreePaint;
-							paintMode = 0;
-							toolInUse = true;
-						}
+                                //Paint whatever current cell we're over.
+                        if (Event.current.isMouse && Event.current.type == EventType.MouseDown) {
+                            //Debug.Log("Clicked");
+                            if(designer.areas[currentArea].Contains(mousePos, currentSelection)) {
+                                //Debug.Log("      within.");
+                                paintPos = mousePos;
+                                EditorApplication.update += FreePaint;
+                                paintMode = 0;
+                                toolInUse = true;
+                            }
+                        }
 						break;
 					case 1:
 						//Ctrl will clear the contents of the cell we're over.
 						if (Event.current.isMouse && Event.current.type == EventType.MouseDown
 							&& designer.areas [currentArea].Contains (mousePos, currentSelection)) {
-							EditorApplication.update += FreePaint;
+                            paintPos = mousePos;
+                            EditorApplication.update += FreePaint;
 							paintMode = 1;
 							toolInUse = true;
 						}
@@ -1948,9 +2123,9 @@ namespace Crux{
 						//Shift fill paints the whole group.
 						if (Event.current.isMouse && Event.current.type == EventType.MouseDown
 							&& designer.areas [currentArea].Contains (mousePos, currentSelection)) {
-
-							//Start our designer fill process.
-							tilePolyCheck = designer.FillTileGroup(currentArea, currentSelection);
+                            paintPos = mousePos;
+                            //Start our designer fill process.
+                            tilePolyCheck = designer.FillTileGroup(currentArea, currentSelection);
 							EditorApplication.update += FillTiles;
 							doPaint = true;
 							paintMode = 3;
@@ -1970,11 +2145,11 @@ namespace Crux{
 								return;
 							}
 							cellID = -1;
-							if (designer.areas [currentArea].tileGroups [currentSelection].ContainsPoint (mousePos, ref cellID)) {
-								if (designer.areas [currentArea].tileGroups [currentSelection].cells [cellID].content != null) {
-									PaintSample p = designer.painter.Paint (designer.areas [currentArea].tileGroups [currentSelection].cells [cellID].point);
+							if (designer.areas [currentArea].tileGroups [cs].ContainsPoint (mousePos, ref cellID)) {
+								if (designer.areas [currentArea].tileGroups [cs].cells [cellID].content == null) {
+									PaintSample p = designer.painter.Paint (designer.areas [currentArea].tileGroups [cs].cells [cellID].point);
 									if (p != null) {
-										designer.areas [currentArea].tileGroups [currentSelection].cells [cellID].content = p.gameObject;
+										designer.areas [currentArea].tileGroups [cs].cells [cellID].content = p.gameObject;
 									}
 								}
 							}
@@ -2013,15 +2188,16 @@ namespace Crux{
 				tilePolyCheck = null;
 			}
 		}
-
+        
 		public void TilePoly(){
 			if (!tilePolyCheck.MoveNext ()) {
 				toolInUse = false;
 				EditorApplication.update -= TilePoly;
 				tilePolyCheck = null;
+                updateCurrentAreaEditor = true;
 				currentSelection = currentAreaEditor.shapes.Length + currentAreaEditor.holes.Length + 
 				currentAreaEditor.splines.Length + currentAreaEditor.tileGroups.Length - 1;
-
+                selectedTool = 0;
 				if (designer.areas [currentArea].tileGroups.Length < 6) {
 					tileScrollHeight = (designer.areas [currentArea].tileGroups.Length + 1) * lineHeight;
 				} else {
@@ -2029,59 +2205,87 @@ namespace Crux{
 				}
 			}
 		}
-
+        bool tsc;
 		public void TileSpline(){
 			if (!tilePolyCheck.MoveNext ()) {
-				List<Polygon> polys = new List<Polygon> (designer.areas [currentArea].shapes);
-				polys.RemoveAt (polys.Count - 1);
-				designer.areas [currentArea].shapes = polys.ToArray ();
-				currentAreaEditor = new DesignAreaEditor(designer.areas[currentArea]);
-				//Check which tiles intersect with the spline points.
-				List<int> intersectedTiles = new List<int>();
-				int k = designer.areas[currentArea].tileGroups.Length;
-				//Go through each spline point on our smoothed spline.
-				for(int i = currentAreaEditor.splines[currentSelection].points.Length-1; i>=0;i--){
-					//Check to see if any tile contains that point.
-
-					bool found = false;
-					int l = -1;
-					designer.areas [currentArea].tileGroups [k].ContainsPoint (currentAreaEditor.splines [currentSelection].points [i], ref l);
-
-					if (l>=0) {
-						bool alreadyHave = false;
-						for (int j = intersectedTiles.Count - 1; j >= 0; j--) {
-							if (intersectedTiles [j] == l) {
-								alreadyHave = true;
-								break;
-							}
-						}
-						if (!alreadyHave) {
-							intersectedTiles.Add (l);
-						}
-					}
-
-				}
-				//Remove all tiles that don't.
-				for(int i = designer.areas[currentArea].tileGroups[k].cells.Length-1; i>=0;i--){
-					bool removeThis = true;
-					for(int j = intersectedTiles.Count-1; j >=0; j--){
-						if (intersectedTiles [j] == i) {
-							removeThis = false;
-						}
-					}
-					if (removeThis) {
-						designer.areas [currentArea].tileGroups [k].RemoveCell (i);
-					}
-				}
-				currentAreaEditor = new DesignAreaEditor(designer.areas[currentArea]);
-				//Remove shape.
-
-
-				toolInUse = false;
-				EditorApplication.update -= TileSpline;
-				tilePolyCheck = null;
+                if (!tsc)
+                {
+                    //Debug.Log("Starting spline check.");
+                    tilePolyCheck = SplineTiling();
+                    tsc = true;
+                }
+                else {
+                    //Debug.Log("Finished spline check.");
+                    toolInUse = false;
+                    EditorApplication.update -= TileSpline;
+                    tilePolyCheck = null;
+                }
 			}
 		}
+
+        IEnumerator SplineTiling()
+        {
+            List<Polygon> polys = new List<Polygon>(designer.areas[currentArea].shapes);
+            polys.RemoveAt(polys.Count - 1);
+            designer.areas[currentArea].shapes = polys.ToArray();
+            updateCurrentAreaEditor = true;
+            RedrawSceneView();
+            yield return null;
+            //Check which tiles intersect with the spline points.
+            List<int> intersectedTiles = new List<int>();
+            int k = designer.areas[currentArea].tileGroups.Length-1, m = currentSelection - currentAreaEditor.shapes.Length - currentAreaEditor.holes.Length;
+            Debug.Log(designer.areas[currentArea].tileGroups[k].cells.Length.ToString()
+                + "," + designer.areas[currentArea].tileGroups[k].extents.ToString());
+            //Go through each spline point on our smoothed spline.
+            for (int i = currentAreaEditor.splines[m].points.Length - 1; i >= 0; i--)
+            {
+                //Check to see if any tile contains that point.
+
+                int l = -1;
+                designer.areas[currentArea].tileGroups[k].ContainsPoint(currentAreaEditor.splines[m].points[i], ref l);
+
+                if (l >= 0)
+                {
+                    bool alreadyHave = false;
+                    for (int j = intersectedTiles.Count - 1; j >= 0; j--)
+                    {
+                        if (intersectedTiles[j] == l)
+                        {
+                            alreadyHave = true;
+                            break;
+                        }
+                    }
+                    if (!alreadyHave)
+                    {
+                        Debug.Log("Cell#" + l.ToString() + " intersects spline.");
+                        intersectedTiles.Add(l);
+                    }
+                }
+
+            }
+            //Remove all tiles that don't.
+            for (int i = designer.areas[currentArea].tileGroups[k].cells.Length - 1; i >= 0; i--)
+            {
+                bool removeThis = true;
+                for (int j = intersectedTiles.Count - 1; j >= 0; j--)
+                {
+                    if (intersectedTiles[j] == i)
+                    {
+                        removeThis = false;
+                        break;
+                    }
+                }
+                if (removeThis)
+                {
+                    designer.areas[currentArea].tileGroups[k].RemoveCell(i);
+                }
+            }
+            updateCurrentAreaEditor = true;
+            yield return null;
+            currentSelection = currentAreaEditor.shapes.Length + currentAreaEditor.holes.Length +
+            currentAreaEditor.splines.Length + currentAreaEditor.tileGroups.Length - 1;
+            
+        }
 		public void FillTiles(){
 			
 			if (!tilePolyCheck.MoveNext ()) {
@@ -2432,9 +2636,6 @@ namespace Crux{
 			}
 		}
 		*/
-
-
-
 	}
 
 

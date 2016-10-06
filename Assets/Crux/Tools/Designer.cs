@@ -12,18 +12,21 @@ namespace Crux{
         public enum DesignCanvasType {World, LocalObjective, LocalSubjective, Mesh}
 		public DesignCanvasType canvasType = DesignCanvasType.LocalObjective;
 
-		public int maxCellsToPaintPerFrame = 5;
+		public int maxCellsToPaintPerFrame = 5, fillSpread = 6;
+        public float fillOverlapTolerance = 0.125f, fillDistance = 0.25f;
 		public enum DesignerStatus {Neutral, Tiling, Painting, Edging}
 		public DesignerStatus status = DesignerStatus.Neutral;
 
 		#if UNITY_EDITOR
-		public float snap = 0.5f,fillOverlapTolerance = 0.125f, fillDistance = 0.25f;
+		public float snap = 0.5f;
 		public Vector3 brushSize = Vector3.one;
-        public int splineSmoothing = 10, fillSpread = 4;
+        public int splineSmoothing = 10;
 		#endif
+
         public IEnumerator FillPolygon(int areaID, int polyID, Vector3 startingPos)
         {
             Polygon p;
+            int m = 0;
             if(polyID < areas[areaID].shapes.Length) { p = areas[areaID].shapes[polyID]; }
             else { p = areas[areaID].holes[polyID- areas[areaID].shapes.Length]; }
             //We'll keep two lists. One of established points that have already attempted to 
@@ -44,17 +47,20 @@ namespace Crux{
                            fillDistance*Mathf.Sin(2*Mathf.PI*j*mop)+ currentGeneration[i].y, currentGeneration[i].z);
                         //Go through each Established Point, and all the OTHER current generation points.
                         //If any of them are within a tolerance to this proposed position, don't generate. 
-                        bool addP = true;
-                        for (int k = establishedPoints.Count-1; k>=0; k--)
+                        bool addP = p.ContainsPoint(point);
+                        if (addP)
                         {
-                            if(establishedPoints[k].WithinTolerance(point, fillOverlapTolerance))
+                            for (int k = establishedPoints.Count - 1; k >= 0; k--)
                             {
-                                addP = false;
-                                break;
+                                if (establishedPoints[k].WithinTolerance(point, fillOverlapTolerance))
+                                {
+                                    addP = false;
+                                    break;
+                                }
+
                             }
-                            
                         }
-                        if (!addP)
+                        if (addP)
                         {
                             for(int k = nextGeneration.Count -1; k >=0; k--)
                             {
@@ -69,11 +75,22 @@ namespace Crux{
                         if (addP) {
                             nextGeneration.Add(point);
                             //Paint asset.
+                            PaintSample tP = painter.Paint((Vector2)point);
+                            tP.transform.localScale = brushSize;
+                            painter.ApplyPaintProperties(tP.transform);
+                            m++;
+                            if(m >= maxCellsToPaintPerFrame)
+                            {
+                                m -= maxCellsToPaintPerFrame;
+                                yield return null;
+                            }
                         }
                     }
 
                     establishedPoints.Add(currentGeneration[i]);
                 }
+                yield return null;
+                //Debug.Log(nextGeneration.Count);
                 currentGeneration.Clear();
                 currentGeneration = new List<Vector3>(nextGeneration.ToArray());
 
@@ -208,59 +225,31 @@ namespace Crux{
 			status = DesignerStatus.Neutral;
 		}
 
-		public IEnumerator PaintPolygon(int areaID){
+		public IEnumerator PaintPolygon(int areaID, int polyID){
 			status = DesignerStatus.Painting;
 			
 			int m = 0;
-			GameObject areaLines = new GameObject (), shapeLines, line;
-			int i, j;
-			Vector3[] pt;
-			for (i = areas [areaID].shapes.Length - 1; i >= 0; i--) {
-
-				shapeLines = new GameObject (areas [areaID].shapes [i].name + " lines");
-				shapeLines.transform.parent = areaLines.transform;
-
-				pt = areas [areaID].shapes [i].points.ConvertToVec3();
-				for (j = pt.Length - 1; j >= 0; j--) {
+            Polygon p; if (polyID < areas[areaID].shapes.Length) { p = areas[areaID].shapes[polyID]; }
+            else { p = areas[areaID].holes[polyID - areas[areaID].shapes.Length]; }
+			GameObject areaLines = new GameObject (p.name + "_Outline"), line;
+            areaLines.transform.parent = areas[areaID].transform;
+			int j;
+			Vector3[] pt = p.points.ConvertToVec3();
+			for (j = pt.Length - 1; j >= 0; j--) {
 					
-					if (j < pt.Length - 1) {
-						line = painter.PaintLine (pt [j], pt [j + 1]);
-					} else {
-						line = painter.PaintLine (pt [j], pt [0]);
-					}
-					line.name = areas [areaID].shapes [i].name + " " + j.ToString ();
-					line.transform.parent = shapeLines.transform;
-					m++;
-					if (m >= maxCellsToPaintPerFrame) {
-						m = 0;
-						yield return null;
-					}
+				if (j < pt.Length - 1) {
+					line = painter.PaintLine (pt [j], pt [j + 1]);
+				} else {
+					line = painter.PaintLine (pt [j], pt [0]);
+				}
+				line.name = p.name + " " + j.ToString ();
+				line.transform.parent = areaLines.transform;
+				m++;
+				if (m >= maxCellsToPaintPerFrame) {
+					m = 0;
+					yield return null;
 				}
 			}
-
-			for (i = areas [areaID].holes.Length - 1; i >= 0; i--) {
-
-				shapeLines = new GameObject (areas [areaID].holes [i].name + " lines");
-				shapeLines.transform.parent = areaLines.transform;
-
-				pt = areas [areaID].holes [i].points.ConvertToVec3();
-				for (j = pt.Length - 1; j >= 0; j--) {
-
-					if (j < pt.Length - 1) {
-						line = painter.PaintLine  (pt [j + 1],pt [j]);
-					} else {
-						line = painter.PaintLine (pt [0],pt [j]);
-					}
-					line.name = areas [areaID].holes [i].name + " " + j.ToString ();
-					line.transform.parent = shapeLines.transform;
-					m++;
-					if (m >= maxCellsToPaintPerFrame) {
-						m = 0;
-						yield return null;
-					}
-				}
-			}
-
 			yield return null;
 			status = DesignerStatus.Neutral;
 		}
@@ -312,15 +301,28 @@ namespace Crux{
 					}
 				}
 			} else {
-				if (id < shapes.Length) {
+                //Debug.Log("ID val: " + id);
+               // Debug.Log("shapes: " + shapes.Length);
+                //Debug.Log("holes: " + holes.Length);
+                //Debug.Log("splines: " + splines.Length);
+                //Debug.Log("tilegroups: " + tileGroups.Length);
+                if (id < shapes.Length) {
 					if (shapes [id].ContainsPoint (point)) {
 						return true;
 					}
-				} else {
+				} else if(id < shapes.Length+ holes.Length){
 					if (holes [id-shapes.Length].ContainsPoint (point)) {
 						return true;
 					}
-				}
+				} else if (id >= shapes.Length + holes.Length + splines.Length && 
+                    id < shapes.Length + holes.Length + splines.Length + tileGroups.Length)
+                {
+                    //Debug.Log("Value is within tilegroup bounds.");
+                    int cellID=-1;  if(tileGroups[id - (shapes.Length + holes.Length + splines.Length)].ContainsPoint(point, ref cellID))
+                    {
+                        return true;
+                    }
+                }
 			}
 			return has;	
 		}
@@ -976,15 +978,17 @@ namespace Crux{
 			yield return null;
 		}
 
-		public IEnumerator ConvertShapeToCollider(int id){
+		public void ConvertShapeToCollider(int id){
 			PolygonCollider2D collider = new GameObject(shapes[id].name).AddComponent<PolygonCollider2D>();
-			collider.gameObject.hideFlags = HideFlags.HideInHierarchy;
+			//collider.gameObject.hideFlags = HideFlags.HideInHierarchy;
 			collider.transform.parent = transform;
 
 			Polygon poly = new Polygon( shapes [id]);
 			poly.ReducePoints (2, float.PositiveInfinity);
 			collider.points = poly.points;
-			yield return null;
+            List<Collider2D> newCols = new List<Collider2D>(colliders2D);
+            newCols.Add(collider);
+            colliders2D = newCols.ToArray();
 		}
 
 		public void ConvertPolygonCollidersToShapes(PolygonCollider2D[] polys){
@@ -997,5 +1001,94 @@ namespace Crux{
 			}
 			shapes = shaps.ToArray ();
 		}
-	}
+
+        public void ConvertSplineToShape(int splineID, int resample = 10)
+        {
+            if (splineID >= 0 && splineID < splines.Length)
+            {
+                Spline spline = splines[splineID];
+                Polygon newShape = new Polygon(spline.name + "_Shape");
+                List<Vector> newPoints = new List<Vector>();
+                float a, b = 0, c;
+                for (int i = 0; i < spline.Length - 1; i++)
+                {
+                    //1. Add this point.
+                    newPoints.Add(spline[i]);
+                    a = b; b = spline.GetPercentAtPoint(i + 1);
+                    c = (b - a) / resample;
+                    //2. If the sectionType for this section is 1, just go to the next point.
+                    // -otherwise, resample between this one and the next one.
+                    if (spline.sectionTypes[i] != 1)
+                    {
+                        for (int j = 1; j < resample; j++)
+                        {
+                            newPoints.Add(spline.GetPoint(a + (c * j)));
+                        }
+                    }
+                }
+                newPoints.Add(spline[spline.Length - 1]);
+
+                newShape.points = newPoints.ToArray().ConvertToVec2();
+                List<Polygon> newShapes = new List<Polygon>(shapes);
+                newShapes.Add(newShape);
+                shapes = newShapes.ToArray();
+            }
+        }
+
+        public void ConvertShapeToSpline(int shapeID)
+        {
+            if (shapeID >= 0 && shapeID < shapes.Length)
+            {
+                Polygon shape = shapes[shapeID];
+                Spline spline = new Spline();
+                spline.name = shape.name + "_Spline";
+                spline.SetSplinePoints(shape.points.ConvertToVector());
+
+                List<Spline> newsplines = new List<Spline>(splines);
+                newsplines.Add(spline);
+                splines = newsplines.ToArray();
+
+            }
+        }
+
+        public void ConvertShapeToMesh(int shapeID) {
+            if(shapeID >=0 && shapeID < shapes.Length)
+            {
+                GameObject g = new GameObject(shapes[shapeID].name + "_Graphic");
+                
+                shapes[shapeID].Triangulate();
+                //MeshRenderer m = g.AddComponent<MeshRenderer>();
+                g.AddComponent<MeshRenderer>();
+                MeshFilter me = g.AddComponent<MeshFilter>();
+                me.sharedMesh = new Mesh();
+                me.sharedMesh.vertices = shapes[shapeID].points.ConvertToVec3();
+                me.sharedMesh.triangles = shapes[shapeID].triangles;
+                me.sharedMesh.RecalculateBounds();
+                me.sharedMesh.RecalculateNormals();
+                Vector2[] uvs = shapes[shapeID].points;
+                Vector2 poffset = Vector2.zero,
+                    scaler = new Vector2(1f/shapes[shapeID].extents.width, 1f/shapes[shapeID].extents.height);
+                if(shapes[shapeID].extents.xMin < 0) { poffset.x = Mathf.Abs(shapes[shapeID].extents.xMin); }
+                if (shapes[shapeID].extents.yMin < 0) { poffset.y = Mathf.Abs(shapes[shapeID].extents.yMin); }
+                for (int i = uvs.Length-1; i >=0; i--)
+                {
+                    uvs[i] += poffset;
+                    uvs[i].Scale(scaler);
+                }
+                me.sharedMesh.uv = uvs;
+                switch (canvasType)
+                {
+                    case Designer.DesignCanvasType.World:
+                        
+                        break;
+                    case Designer.DesignCanvasType.LocalObjective:
+                        
+                        break;
+                    case Designer.DesignCanvasType.LocalSubjective:
+                        break;
+                }
+                
+            }
+        }
+    }
 }

@@ -392,7 +392,16 @@ public static class ExtensionMethods {
 		return true;
 	}
 
-	public static Vector[] ConvertToVector(this Vector3[] value){
+    public static Vector[] ConvertToVector(this Vector2[] value)
+    {
+        Vector[] v = new Vector[value.Length];
+        for (int i = v.Length - 1; i >= 0; i--)
+        {
+            v[i] = value[i];
+        }
+        return v;
+    }
+    public static Vector[] ConvertToVector(this Vector3[] value){
 		Vector[] v = new Vector[value.Length];
 		for (int i = v.Length - 1; i >= 0; i--) {
 			v [i] = value [i];
@@ -406,9 +415,17 @@ public static class ExtensionMethods {
 			v [i] = value [i];
 		}
 		return v;
-	} 
-
-	public static Vector3[] ConvertToVec3 (this Vector2[] value){
+	}
+    public static Vector2[] ConvertToVec2(this Vector[] value)
+    {
+        Vector2[] v = new Vector2[value.Length];
+        for (int i = v.Length - 1; i >= 0; i--)
+        {
+            v[i] = value[i];
+        }
+        return v;
+    }
+    public static Vector3[] ConvertToVec3 (this Vector2[] value){
 		Vector3[] v = new Vector3[value.Length];
 		for (int i = v.Length - 1; i >= 0; i--) {
 			v [i] = value [i];
@@ -537,7 +554,7 @@ public static class ExtensionMethods {
 		return omni;
 	}
 
-	public static bool PolyContainsPoint (Vector2[] points, Vector2 p) { 
+	public static bool PolyContainsPoint (this Vector2[] points, Vector2 p) { 
 		int j = points.Length-1; 
 		bool inside = false; 
 		for (int i = 0; i < points.Length; j = i++) { 

@@ -10,6 +10,7 @@ namespace Crux {
 		/// <summary>
 		/// The n-dimensional values for this vector.
 		/// </summary>
+        [SerializeField]
 		float[] dimensions;
 
 		public float this [int index] {

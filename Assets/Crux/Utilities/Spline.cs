@@ -16,6 +16,7 @@ namespace Crux{
 		public Color color;
 		#endif
 
+        [SerializeField]
 		Vector[] points = new Vector[0];
 
 		public Vector this[int index]{
@@ -31,6 +32,7 @@ namespace Crux{
 
 		bool initialized = false;
 
+        
 		int sections;
 
 		int currentSection = -1;
@@ -42,7 +44,7 @@ namespace Crux{
 		public int[] sectionTypes;
 		public float[] sectionWeights;
 
-		[System.NonSerialized]
+		
 		public float weightedPercent, totalWeight;
 
 
@@ -144,6 +146,20 @@ namespace Crux{
 			}
 		}
 
+        public float GetPercentAtPoint(int p)
+        {
+            float per = 0;
+            //We know our totalWeight
+            //Our percent at 0 is 0.
+            //Our percent at points.Length-1 is 1
+
+            for(int i = 0; i < p; i++)
+            {
+                per += sectionWeights[i];
+            }
+            per = per / totalWeight;
+            return per;
+        }
 		public int GetSectionAtPercent(float p, bool weighted = true)
 		{
 			int i;
@@ -152,18 +168,18 @@ namespace Crux{
 				if(p >1){i = Mathf.FloorToInt(p); p-=i;}
 				else if(p < 0){i = Mathf.Abs(Mathf.FloorToInt(p)); p +=i;}
 			}
-            if (weighted)
-            {
+            
                 //Debug.Log (totalWeight);
                 if (p >= 0 && p <= 1)
                 {
                     float currentWeight = 0f, c;
                     float percentAsWeight = p * totalWeight;
-
+                
                     for (i = 0; i < sections; i++)
                     {
                         c = currentWeight + sectionWeights[i];
-                        if (currentWeight <= percentAsWeight && c > percentAsWeight)
+                    //Debug.Log(percentAsWeight + ","+currentWeight + ","+c);
+                    if (currentWeight <= percentAsWeight && c > percentAsWeight)
                         {
                             //What we want is the percent WITHIN the current section that our overall percent is at.
                             //Right now, currentWeight is less than or equal to our percent of our total tension.
@@ -185,18 +201,7 @@ namespace Crux{
                     weightedPercent = 0;
                     return 0;
                 }
-            } else {
-                float secPer = 1 / sections, currentSP = 0;
-                //Debug.Log(p + " / " + secPer + " / " + sections);
-                for (i = 0; i < sections; i++) {
-                    float c = currentSP + secPer;
-                    if (c >= p && currentSP <= p) {
-                        weightedPercent = p;
-                        return i;
-                    }
-                    currentSP = c;
-                }
-            }
+            
 			return currentSection;
 		}	
 
@@ -368,6 +373,7 @@ namespace Crux{
 		public Vector GetPoint(float percent, bool weighted = true)
 		{
 			if (!initialized) {
+                Sections = Length - 1;
 				SetCapPoints ();
 				initialized = true;
 			}
@@ -383,7 +389,7 @@ namespace Crux{
 
 					int cS = GetSectionAtPercent (percent, weighted);
 					//Debug.Log (points[cS].Length + " " + cS.ToString () + " " + points[cS].defaultValue);
-					//Debug.Log (cS.ToString () + " ");
+					//Debug.Log (percent.ToString() + "," + cS.ToString ());
 					
 
 					if (cS != currentSection) {
@@ -628,7 +634,8 @@ namespace Crux{
 
 		public float CatmullRom(float t, float pa, float pb, float pc, float pd)
 		{
-			return 0.5f*((-pa+3f*pb-3f*pc+pd)*(t*t*t)+(2f*pa-5f*pb+4f*pc-pd)*(t*t)+(-pa+pc)*t+2f*pb);
+			
+            return 0.5f*((-pa+3f*pb-3f*pc+pd)*(t*t*t)+(2f*pa-5f*pb+4f*pc-pd)*(t*t)+(-pa+pc)*t+(2f*pb));
 		}
 		public float CubicBezier(float t, float pa, float pb, float pc, float pd)
 		{

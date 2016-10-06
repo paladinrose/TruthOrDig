@@ -290,6 +290,7 @@ namespace Crux{
 
 		public void RemoveCell(int id, bool clearContent = false){
 			if (id >= 0 && id < cells.Length) {
+                Debug.Log("Removing cell#" + id);
 				TileCell cell = cells [id];
 				//Go through each point in the cell and discover if it's used by any others.
 				//If so, leave it alone.
